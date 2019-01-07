@@ -1,7 +1,7 @@
 acmart.cls
 acmart.pdf
 acmguide.pdf
-sample-*.pdf
+
 *.log
 *.aux
 *.cfg
