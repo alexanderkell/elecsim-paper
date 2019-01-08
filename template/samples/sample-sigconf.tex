@@ -192,8 +192,13 @@ TODO
 		\item Agents predict next year's fuel, carbon and demand using linear regression and randomized look back period (between 3 and 6.)
 		\item Plants are dismantled after their lifetime, and only enter operation after pre-development/construction.
 		\end{itemize}
-	\item Validation of model (Price duration curve similar, power plant cost are similar to real life, look into makeup of model steps ahead to see electricity mix and compare to actuals.)
-	\item Performance metrics - Comparison with EMLab.
+	\item Validation of model 
+	\begin{itemize}
+		\item Compare price duration curve
+		\item Compare power plant costs and NPV calculations
+		\item Look number of steps ahead to compare electricity mix and compare to actual (cross-validation)
+	\end{itemize} 
+	\item Performance metrics - Comparison with EMLab, PowerACE (15 minute run time)
 	\begin{itemize}
 		\item Memory, disk size, runtime
 		\item Increase in time complexity with additional data.
