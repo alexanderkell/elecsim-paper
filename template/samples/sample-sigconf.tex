@@ -139,13 +139,18 @@ TODO
 
 The world faces significant challenges from climate change and global warming. A rise in carbon emissions increases the risk of severe impacts on the world such as rising sea levels, species extinction, heat waves and tropical cyclones \cite{IPCC2014}. The scientific literature concurs that the recent change in climate is anthropogenic, with 97\% of peer reviewed articles of this view \cite{Cook2013}.  
 
-To achieve carbon neutrality, the energy mix must shift from a largely fossil fuel based system, to one based on renewable energy. In essence, using solar, wind and tidal power to generate electricity and power homes, industry and transport. 
+To achieve carbon neutrality, the energy mix must shift from a largely fossil fuel based system, to one based on renewable energy. In essence, using solar, wind and tidal power to generate electricity and power homes, industry and transport \cite{Hoffert2002}. 
 
-For this to occur, a transition in electricity infrastructure is required. Moving from a centralised and homogenous fossil fuel-based system to a distributed system based on renewable energy and batteries. To better understand the risks and uncertainties surrounding this transition, and to model the potential actions that could be taken by policy makers, this paper presents ElecSIM, an open source agent-based modelling toolkit, written in python, which allows for the evaluation of alternative scenarios prior to implementation of policy. 
+For this to occur, a transition in electricity infrastructure is required. Moving from a centralised and homogenous fossil fuel-based system to a distributed system based on renewable energy and batteries. To better understand the risks and uncertainties surrounding this transition, and to model the potential actions that can be taken by policy makers, this paper presents ElecSIM, an open source agent-based modelling toolkit, written in python, which allows for the evaluation of alternative scenarios prior to implementation of policy. 
 
-This tool can be used by modelling experts to test policy outcomes under different scenarios and provide quantitative advice to policy makers. International agreements such as the Paris climate agreement, where nation states agreed on the goal of limiting the rise in global average temperature to well below 2$^\circ$C above pre-industrial levels, mean a simulation framework of the electricity market will dramatically increase the usefulness of a tool such as ElecSIM.
+This tool can be used by modelling experts to test policy outcomes under different scenarios and provide quantitative advice to policy makers. International agreements such as the Paris climate agreement, where nation states agreed on the goal of limiting the rise in global average temperature to well below 2$^\circ$C above pre-industrial levels, mean that an open-source, reproducible and transparent model that can be taken to account by experts and understood by non-experts is of importance. This allows for the development of policies based on known assumptions, thorough testing and validation.
 
+Optimisation models calculate an optimal cost pathway of investment in power plants over the long-term. However, many western democracies have purposely moved away from central control in the energy sector, which make the results of optimisation models difficult to implement. Agent-based models provide a solution to this by modelling heterogeneous actors with imperfect knowledge in a regulatory environment. The emergent behaviour of the agents can be observed under different policies such as a carbon tax.
 
+Policy making in energy system comes with inherent risk. Decisions made can have large long term impacts and may be sub-optimal. Power plants have high capital costs, long construction times, and operate over a long period. Therefore, errors made may be compounded, and can have effects well into the future.
+
+In this paper we detail how we created our model. Section \ref{Literature Review} is a literature review of the models currently used in practice. Section \ref{Model} details the model and assumptions made. Section \ref{Scenario Testing} details our results, and explores ways in which ElecSIM can be used. We conclude the work in section \ref{Conclusion}
+ 
 
 \begin{itemize}
 	\item We have developed a framework for evaluating alternative scenarios, prior to implementation of policy.
@@ -161,7 +166,7 @@ This tool can be used by modelling experts to test policy outcomes under differe
 
 
 
-\section{Literature Review}
+\section{Literature Review}\label{Literature Review}
 
 \begin{itemize}
 	\item Agent Based Models - eg. EMCAS, PowerACE, EMLab: Leaves a requirement for an open source toolkit written in python. Many one-off models available, however difficult to apply to different scenarios.
@@ -172,7 +177,7 @@ This tool can be used by modelling experts to test policy outcomes under differe
 
 
 
-\section{ELECSIM}
+\section{ELECSIM} \label{Model}
 
 
 \begin{itemize}
@@ -220,7 +225,7 @@ This tool can be used by modelling experts to test policy outcomes under differe
 	\end{itemize}
 \end{itemize}
 
-\section{Scenario Testing}
+\section{Scenario Testing}\label{Scenario Testing}
 
 \begin{itemize}
 	\item Effect of different carbon tax on investments made.
@@ -232,7 +237,7 @@ This tool can be used by modelling experts to test policy outcomes under differe
 \end{itemize}
 
 
-\section{Conclusions}
+\section{Conclusions}\label{Conclusion}
 
 \begin{itemize}
 	\item Requirement for agent based models based on imperfect information, liberalised energy markets
