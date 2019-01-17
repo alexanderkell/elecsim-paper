@@ -84,7 +84,7 @@
 % The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
 
-Due to the threat of climate change, a shift from a fossil fuel based system to one based on renewable energy is required. To aid decision makers, we present a new tool, ElecSIM, which is an agent-based modelling framework used to examine the effect of policy on long term investment decisions. We review different techniques currently used to model long term energy decisions, and discuss why agent-based models will become an important strategic tool for policy makers
+Due to the threat of climate change, a shift from a fossil fuel based system to one based on renewable energy is required. To aid decision makers, we present a new tool, ElecSIM, which is an agent-based modelling framework used to examine the effect of policy on long term investment decisions. We review different techniques currently used to model long term energy decisions, and motivate why agent-based models will become an important strategic tool for policy makers
 
 We show how modelling stochasticity improves model reliability. The model runs in yearly time steps, making assumptions based on empirical data on the impact of intermittent renewable energy. We present the dynamics of the system through scenario testing and provide validation.  We also describe the use of a scenario file to allow non-experts to rapidly prototype new ideas, modularity which allows technical experts to add and remove features at will, and explain why an open-source toolkit is required.
 
@@ -96,12 +96,11 @@ Future work includes integrating different types of agent based learning for the
 % Please copy and paste the code instead of the example below.
 %
 
-
-
 %
 % Keywords. The author(s) should pick words that accurately describe the work being
 % presented. Separate the keywords with commas.
-\keywords{datasets, neural networks, gaze detection, text tagging}
+
+% \keywords{agent-based modelling, simulation, energy market simulation, energy models, policy}
 
 %
 % A "teaser" image appears between the author and affiliation information and the body 
@@ -114,130 +113,24 @@ Future work includes integrating different types of agent based learning for the
 
 
 \section{Introduction}
-
-The world faces significant challenges from climate change and global warming. A rise in carbon emissions increases the risk of severe impacts on the world such as rising sea levels, species extinction, heat waves and tropical cyclones \cite{IPCC2014}. The scientific literature concurs that the recent change in climate is anthropogenic, with 97\% of peer reviewed articles of this view \cite{Cook2013}.  
-
-To achieve carbon neutrality, the energy mix must shift from a largely fossil fuel based system, to one based on renewable energy. In essence, using solar, wind and tidal power to generate electricity and power homes, industry and transport \cite{Hoffert2002}. 
-
-For this to occur, a transition in electricity infrastructure is required. Moving from a centralised and homogenous fossil fuel-based system to a distributed system based on renewable energy and batteries. To better understand the risks and uncertainties surrounding this transition, and to model the potential actions that can be taken by policy makers, this paper presents ElecSIM, an open source agent-based modelling toolkit, written in python, which allows for the evaluation of alternative scenarios prior to implementation of policy. 
-
-This tool can be used by modelling experts to test policy outcomes under different scenarios and provide quantitative advice to policy makers. International agreements such as the Paris climate agreement, where nation states agreed on the goal of limiting the rise in global average temperature to well below 2$^\circ$C above pre-industrial levels, mean that an open-source, reproducible and transparent model that can be taken to account by experts and understood by non-experts is of importance. This allows for the development of policies based on known assumptions, thorough testing and validation.
-
-Optimisation models calculate an optimal cost pathway of investment in power plants over the long-term. However, many western democracies have purposely moved away from central control in the energy sector, which make the results of optimisation models difficult to implement. Agent-based models provide a solution to this by modelling heterogeneous actors with imperfect knowledge in a regulatory environment. The emergent behaviour of the agents can be observed under different policies such as a carbon tax.
-
-Policy making in energy system comes with inherent risk. Decisions made can have large long term impacts and may be sub-optimal. Power plants have high capital costs, long construction times, and operate over a long period. Therefore, errors made may be compounded, and can have effects well into the future.
-
-This paper details our model, ElecSIM. Section \ref{Literature Review} is a literature review of the models currently used in practice. Section \ref{Model} details the model and assumptions made. Section \ref{Scenario Testing} details our results, and explores ways in which ElecSIM can be used. We conclude the work in section \ref{Conclusion}
- 
-
-\begin{itemize}
-	\item We have developed a framework for evaluating alternative scenarios, prior to implementation of policy.
-	\item Used by experts working in collaboration with policy makers.
-	\item Importance of a transition in electricity infrastructure (Paris agreement, UK Climate change act)
-	\item Importance of understanding effect of decisions made today on the future (limit of 1.5C by 2050)
-	\item Introduce ElecSIM as a toolkit to inform long-term domestic policy questions in the electricity market. 
-	\item Ability to model the effects of carbon taxation, and the effect of different scenarios 
-	\item Talk about the need to model a non-stationary, dynamic system, with multiple interacting agents with imperfect information
-	\item Requirement for an Open-Source, free Toolkit written in python. Low barrier of entry, and integration with existing python data analytics and machine learning techniques. Transparent, reproducible, and data made available. This allows for results to be open to greater criticism and better inform policy decisions.
-	\item Simple model which matches real life behaviour for low complexity and therefore increases transparency.
-\end{itemize}
-
-
+\input{introduction}
 
 \section{Literature Review}\label{Literature Review}
-
-Energy models can typically be classified as bottom-up techno-economic models or top-down macro-economic models \cite{Bohringer1998}. Top-down models model how demand varies with regards to historical economic data, and analyse aggregate behaviour \cite{Hall2016}. They model how energy prices vary with respect to elasticities. Bottom-up models represent the energy sector in detail, and are written as mathematical programming problems \cite{Gargiulo2013}. They detail technology explicitly, and can include cost and emissions implications \cite{Hall2016}.
-
-It is possible to further categorise energy models into optimisation and simulation models. Optimisation energy models minimise costs or maximise welfare from the perspective of a central planner, for instance a government \cite{Keles2017}. A use-case would be a government that wants cheap, reliable and a low-carbon electricity supply by a future date. An optimisation model would find the optimal mix of generators to meet this whilst taking into account the constraints. 
-
-However, electricity market liberalisation in many Western democracies has changed the framework conditions. A central planner has given way to multiple heterogeneous agents acting in their best interest \cite{Most2010}. Therefore, certain policy options must be used by a central planner to attain a desired outcome, for example carbon taxes or subsidies. It is therefore proposed that these complex agents are modelled using agent-based modelling.
-
-As a result of this, agent-based simulation has received increasing attention in recent years, and a number of simulation tools have emerged, for example SEPIA\cite{Kraan2018} EMCAS \cite{Conzelmann}, NEMSIM, AMES, PowerACE, MACSEM, and GAPEX
-
-SEPIA is a discrete event agent based model which utilises agent learning for agent behaviour \cite{Harp2000}. However, the model is utilised for industry specific questions such as .
-
-\begin{itemize}
-	\item Agent Based Models - eg. EMCAS, PowerACE, EMLab: Leaves a requirement for an open source toolkit written in python. Many one-off models available, however difficult to apply to different scenarios.
-	(SEPIA [6], EMCAS [7], NEMSIM [8], AMES [9], PowerACE [10], MASCEM [11, 12], and GAPEX [13] \cite{Lopes})
-	\item Bottom-up optimization models to find minimum cost of electricity system. \cite{Pfenninger2014}. eg. MARKAL/TIMES, MESSAGE. (These do not provide information on how to achieve a certain goal, particularly in a liberalized energy market. Or scenarios as to why a goal may not be achieved as the goal is assumed to be achieved.)
-	\item Computational general equilibrium (CGE) models - Top-down macroeconomic models partial equilibrium model (energy supply, demand, cross-border trade, emissions)- Can be highly complex and difficult to understand. eg. NEMS, PRIMES.
-\end{itemize}
-
-
-
-
+\input{literature_review.tex}
 \section{ELECSIM} \label{Model}
+\input{elecsim}
 
-
-\begin{itemize}
-	\item Model can be modified through a single python scenario file which includes exogenous variables such as number of generation companies, power plants, power plant costs, tax and fuel prices, and demand.
-	\item Architectural framework:
-	\begin{itemize}
-		\item Agents are generation companies.
-		\item Generation companies initialized from government data. And randomized discount rate around a mean of 10\% for nuclear power plants and 5.9\% for other types of generators.
-		\item Costs of power plants taken from empirical data. 
-		\item Historical LCOE costs taken from data, with individual costs such as fixed operation and maintenance, construction and pre-development costs scaled linearly to match LCOE value. (This can be changed by user by specifying linear optimisation constraints).
-		\item Historical Gas turbine and Coal plant efficiency taken from epa data.
-		\item Variable operation and maintenance costs are stochastic to take into account differences in design types, preventative and corrective maintenance, labour costs and skill, asset and site management, health and safety and chance.
-		\item Electricity demand taken from historical data and split up into 19 load segments.
-		\item CO2 prices, fuel Prices, demand growth are exogenous
-		\item Fuel is bought by power producers each year at different prices, related to the standard deviation from historical data. This simulates different hedging strategies, luck and timing of fuel purchasing.
-		\item Outages are modelled by assuming a 93\% outage rate for fuel plants \cite{Ltd2016} and 97\% outage for renewables. \cite{carroll-j}
-		\item Generation companies bid their short run marginal costs.
-		\item Investments made on highest Net Present Value results. CO2 price, fuel price and demand are predicted for the next year using linear regression. Expected price to sell predicted taking average of previous years. Investors will only invest if they have 25\% of the total upfront costs. (the rest taken on by debt and equity as assumed by WACC value.)
-		\item Intermittent power generators can only submit a certain percentage of their total capacity for each load segment. This percentage is matched with empirical data.
-		\item Bids accepted by a centralised grid operator based on merit order.
-	\end{itemize}
-	\item Assumptions: 
-	\begin{itemize}
-		\item Yearly time step
-		\item Renewables contribute to load curve of each demand segment matched with empirical data of typical wind and solar availability at each demand segment
-		\item Different discount rates per user (random)
-		\item Country initialized with full amount of power plants in country and total demand data considered
-		\item No curtailment of renewables
-		\item Imperfect foresight
-		\item Power plant construction and pre-development periods and costs modelled from UK Government BEIS data
-		\item Investments based on highest NPV using a single year to predict all years of power plant.
-		\item Agents predict next year's fuel, carbon and demand using linear regression and randomized look back period (between 3 and 6.)
-		\item Plants are dismantled after their lifetime, and only enter operation after pre-development/construction.
-		\end{itemize}
-	\item Validation of model 
-	\begin{itemize}
-		\item Compare price duration curve
-		\item Compare power plant costs and NPV calculations
-		\item Look number of steps ahead to compare electricity mix and compare to actual (cross-validation)
-	\end{itemize} 
-	\item Performance metrics - Comparison with EMLab, PowerACE (15 minute run time)
-	\begin{itemize}
-		\item Memory, disk size, runtime
-		\item Increase in time complexity with additional data.
-	\end{itemize}
-\end{itemize}
+\section{Validation and Performance}\label{Valdiation and Performance}
+\input{validation_and_performance}
 
 \section{Scenario Testing}\label{Scenario Testing}
+\input{scenario_testing}
 
-\begin{itemize}
-	\item Effect of different carbon tax on investments made.
-	\item Effects of different demand scenarios. (High peaks, high growth, high reduction in demand)
-	\item Effects of high fuel prices.
-	\item Different costs of capital (eg. Borrowing for Nuclear of interest rate to equal 2\% at government bonds rate, as opposed to 10\% for private companies.)
-	\item Different learning rates for renewable costs.
-	\item The effect of long term carbon tax policy (eg. Carbon price known for next 25 years) vs short term changes in carbon tax.
-\end{itemize}
 
 
 \section{Conclusions}\label{Conclusion}
+\input{conclusion}
 
-\begin{itemize}
-	\item Requirement for agent based models based on imperfect information, liberalised energy markets
-	\item Requirement for low barriers to entry open source model.
-	\item Discuss results
-	\item Future work:
-	\begin{itemize}
-		\item Embedding multi-agent intelligence such as Genetic Algorithms,  Q-learning and dynamic reinforcement learning
-		\item Raise spatial and temporal resolution.
-	\end{itemize}
-\end{itemize}
 
 
 \newpage
@@ -245,7 +138,7 @@ SEPIA is a discrete event agent based model which utilises agent learning for ag
 
 
 \section{Introduction}
-ACM's consolidated article template, introduced in 2017, provides a consistent \LaTeX\ style for use across ACM publications, and incorporates accessibility and metadata-extraction functionality necessary for future Digital Library endeavors. Numerous ACM and SIG-specific \LaTeX\ templates have been examined, and their unique features incorporated into this single new template.
+ACM's consolidated article template, introduced in 2017, provides a consistent \LaTeX\ style for use across ACM publications, and incorporates accessibility and metadata-extraction functionality necessary for future Digital Library endeavours. Numerous ACM and SIG-specific \LaTeX\ templates have been examined, and their unique features incorporated into this single new template.
 
 If you are new to publishing with ACM, this document is a valuable guide to the process of preparing your work for publication. If you have published with ACM before, this document provides insight and instruction into more recent changes to the article template.
 

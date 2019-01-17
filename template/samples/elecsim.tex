@@ -1,0 +1,33 @@
+\begin{itemize}
+	\item Model can be modified through a single python scenario file which includes exogenous variables such as number of generation companies, power plants, power plant costs, tax and fuel prices, and demand.
+	\item Architectural framework:
+	\begin{itemize}
+		\item Agents are generation companies.
+		\item Generation companies initialized from government data. And randomized discount rate around a mean of 10\% for nuclear power plants and 5.9\% for other types of generators.
+		\item Costs of power plants taken from empirical data. 
+		\item Historical LCOE costs taken from data, with individual costs such as fixed operation and maintenance, construction and pre-development costs scaled linearly to match LCOE value. (This can be changed by user by specifying linear optimisation constraints).
+		\item Historical Gas turbine and Coal plant efficiency taken from epa data.
+		\item Variable operation and maintenance costs are stochastic to take into account differences in design types, preventative and corrective maintenance, labour costs and skill, asset and site management, health and safety and chance.
+		\item Electricity demand taken from historical data and split up into 19 load segments.
+		\item CO2 prices, fuel Prices, demand growth are exogenous
+		\item Fuel is bought by power producers each year at different prices, related to the standard deviation from historical data. This simulates different hedging strategies, luck and timing of fuel purchasing.
+		\item Outages are modelled by assuming a 93\% outage rate for fuel plants \cite{Ltd2016} and 97\% outage for renewables. \cite{carroll-j}
+		\item Generation companies bid their short run marginal costs.
+		\item Investments made on highest Net Present Value results. CO2 price, fuel price and demand are predicted for the next year using linear regression. Expected price to sell predicted taking average of previous years. Investors will only invest if they have 25\% of the total upfront costs. (the rest taken on by debt and equity as assumed by WACC value.)
+		\item Intermittent power generators can only submit a certain percentage of their total capacity for each load segment. This percentage is matched with empirical data.
+		\item Bids accepted by a centralised grid operator based on merit order.
+	\end{itemize}
+	\item Assumptions: 
+	\begin{itemize}
+		\item Yearly time step
+		\item Renewables contribute to load curve of each demand segment matched with empirical data of typical wind and solar availability at each demand segment
+		\item Different discount rates per user (random)
+		\item Country initialized with full amount of power plants in country and total demand data considered
+		\item No curtailment of renewables
+		\item Imperfect foresight
+		\item Power plant construction and pre-development periods and costs modelled from UK Government BEIS data
+		\item Investments based on highest NPV using a single year to predict all years of power plant.
+		\item Agents predict next year's fuel, carbon and demand using linear regression and randomized look back period (between 3 and 6.)
+		\item Plants are dismantled after their lifetime, and only enter operation after pre-development/construction.
+		\end{itemize}
+\end{itemize}
