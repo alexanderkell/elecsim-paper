@@ -15,7 +15,7 @@
 \copyrightyear{2018}
 \acmYear{2018}
 \setcopyright{acmlicensed}
-\acmConference[e-Energy '19]{e-Energy ’18: The Tenth International Conference on Future Energy Systems}{June 25--28, 2019}{Phoenix, AZ}
+\acmConference[e-Energy '19]{e-Energy '19: The Tenth International Conference on Future Energy Systems}{June 25--28, 2019}{Phoenix, AZ}
 \acmPrice{15.00}
 \acmDOI{10.1145/1122445.1122456}
 \acmISBN{978-1-4503-9999-9/18/06}
@@ -56,21 +56,21 @@
 \author{Alexander Kell}
 \affiliation{%
   \institution{Newcastle University, School of Computing}
-  \city{Newcastle Upon Tyne}
+  \city{Newcastle upon Tyne}
   \country{UK}}
 \email{a.kell2@newcastle.ac.uk}
 
 \author{Matthew Forshaw}
 \affiliation{%
 	\institution{Newcastle University, School of Computing}
-	\city{Newcastle Upon Tyne}
+	\city{Newcastle upon Tyne}
 	\country{UK}}
 \email{matthew.forshaw@newcastle.ac.uk}
 
 \author{A. Stephen McGough}
 \affiliation{%
 	\institution{Newcastle University, School of Computing}
-	\city{Newcastle Upon Tyne}
+	\city{Newcastle upon Tyne}
 	\country{UK}}
 \email{stephen.mcgough@newcastle.ac.uk}
  
@@ -83,7 +83,15 @@
 %
 % The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
-TODO
+
+Due to the threat of climate change, a shift from a fossil fuel based system to one based on renewable energy is required. To aid decision makers, we present the tool ElecSIM, which is an agent-based modelling framework  used to examine the effect of policy on long term investment decisions. We present different techniques currently used to model long term energy decisions, and discuss why agent-based models are becoming an increasingly common tool to tackle this problem.
+
+We explain why an open-source toolkit written in python is required, and how stochasticity improves reliability of the model. We describe the use of a scenario file which allows non-experts to rapidly prototype new ideas, and modularity which allows technical experts to add and remove features at will. 
+
+The model runs in yearly time steps, making assumptions based on empirical data on the impact of intermittent renewable energy. We present the dynamics of the system through scenario testing and provide validation. 
+
+Future work includes integrating different types of agent based learning for the bidding and investment process, utilising multi-agent reinforcement algorithms that can deal with a non stationary environment. We will use the yearly time-step as a baseline model for integration of a higher temporal and spatial resolution.
+
 \end{abstract}
 
 %
@@ -149,7 +157,7 @@ Optimisation models calculate an optimal cost pathway of investment in power pla
 
 Policy making in energy system comes with inherent risk. Decisions made can have large long term impacts and may be sub-optimal. Power plants have high capital costs, long construction times, and operate over a long period. Therefore, errors made may be compounded, and can have effects well into the future.
 
-In this paper we detail how we created our model. Section \ref{Literature Review} is a literature review of the models currently used in practice. Section \ref{Model} details the model and assumptions made. Section \ref{Scenario Testing} details our results, and explores ways in which ElecSIM can be used. We conclude the work in section \ref{Conclusion}
+This paper details our model, ElecSIM. Section \ref{Literature Review} is a literature review of the models currently used in practice. Section \ref{Model} details the model and assumptions made. Section \ref{Scenario Testing} details our results, and explores ways in which ElecSIM can be used. We conclude the work in section \ref{Conclusion}
  
 
 \begin{itemize}
