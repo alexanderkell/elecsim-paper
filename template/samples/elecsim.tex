@@ -1,7 +1,9 @@
 
-ElecSIM has been designed for ease of use and to enable non-experts to rapidly prototype ideas. The core of this has been the design of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants to be initialized, power plant costs, electricity demand and availability factors to be set. Allowing for different countries and different scenarios to be tested.
+ElecSIM has been designed for ease of use to enable non-experts to rapidly test policy ideas. The core to this has been the design of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants to be initialized, power plant costs, electricity demand and availability factors to be set. This allows for the initialisation of different countries and different scenarios to be tested.s
 
-ElecSIM is made up of 3 different agent types, GenCos (Generation Companies), a Power Exchange, and a Demand agent. GenCos are initialised as real life generation companies and initialised with their respective power plants. GenCos are also given a randomized discount rate, around a mean of 10\% for nuclear power plants and 5/9\% for other generators.
+ElecSIM is made up of 3 different agent types, GenCos (Generation Companies), a Power Exchange, and a Demand agent. GenCos are initialised as real life generation companies and initialised with their respective power plants. GenCos are also given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
+
+Power plant costs are initialised using the UK overnment Department for Business and Energy report \cite{Department2016}, with costs interpolated for plants of unknown capacity, and where the capacity of a power plant is larger or smaller than that in the report, the cost parameters for the largest/smallest power plants are used.
 
 
 \begin{itemize}
@@ -19,21 +21,24 @@ ElecSIM is made up of 3 different agent types, GenCos (Generation Companies), a 
 		\item Fuel is bought by power producers each year at different prices, related to the standard deviation from historical data. This simulates different hedging strategies, luck and timing of fuel purchasing.
 		\item Outages are modelled by assuming a 93\% outage rate for fuel plants \cite{Ltd2016} and 97\% outage for renewables. \cite{carroll-j}
 		\item Generation companies bid their short run marginal costs.
-		\item Investments made on highest Net Present Value results. CO2 price, fuel price and demand are predicted for the next year using linear regression. Expected price to sell predicted taking average of previous years. Investors will only invest if they have 25\% of the total upfront costs. (the rest taken on by debt and equity as assumed by WACC value.)
+		\item Investments made on highest Net Present Value results. CO2 price, fuel price and demand are predicted 7 years ahead using linear regression. 
+		\item Estimated sale of electricity price calculated by simulating a market 7 years into the future with expected power plants that are running and have been taken out of service.
+		\item Investors will only invest if they have 25\% of the total upfront costs. (the rest taken on by debt and equity as assumed by WACC value.)
 		\item Intermittent power generators can only submit a certain percentage of their total capacity for each load segment. This percentage is matched with empirical data.
-		\item Bids accepted by a centralised grid operator based on merit order.
+		\item Bids accepted by a centralised power exchange based on merit order. Generation companies bid their short run marginal cost.
 	\end{itemize}
 	\item Assumptions: 
 	\begin{itemize}
 		\item Yearly time step
 		\item Renewables contribute to load curve of each demand segment matched with empirical data of typical wind and solar availability at each demand segment
-		\item Different discount rates per user (random)
-		\item Country initialized with full amount of power plants in country and total demand data considered
+		\item Different discount rates per user (randomized)
+		\item Country initialized with full amount of power plants and generation companies in country and total demand data considered
 		\item No curtailment of renewables
-		\item Imperfect foresight
+		\item Imperfect foresight - Prediction required for demand, co2 price, fuel cost, other investments.
 		\item Power plant construction and pre-development periods and costs modelled from UK Government BEIS data
-		\item Investments based on highest NPV using a single year to predict all years of power plant.
+		\item Investments based on highest NPV using a single year 7 (can be changed in scenario file) time steps into the future to predict all years of power plant.
 		\item Agents predict next year's fuel, carbon and demand using linear regression and randomized look back period (between 3 and 6.)
 		\item Plants are dismantled after their lifetime, and only enter operation after pre-development/construction.
+		\item Legacy power plants are reinitialized to random starting year to account for refurbishment.
 		\end{itemize}
 \end{itemize}
