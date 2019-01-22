@@ -9,11 +9,28 @@ For historical power plants, we used historical levels of levelised cost of ener
 
 When initialised, the variable operation and maintenance costs are selected from a uniform distribution, which can be set by the user. This enables variance in costs between individual power plants for processes such as preventative and corrective maintenance, labour costs and skill, health and safety and chance.  
 
-As per \cite{Chappin2017}, we split the electricity demand for one year and split this into 19 load segments. This enabled us to model the varying demand of electricity throughout a year, and at the same time reduce computational complexity. To model the Intermittency of wind and solar power we allow them to contribute only a certain percentage of total capacity for each load segment based on empirical wind and solar capacity factors, relating demand to average capacity \cite{Pfenninger2016, Staffell2016, Chappin2017}.
+As per \cite{Chappin2017}, we split the electricity demand for one year and split this into 19 load segments. This enabled us to model the varying demand of electricity throughout a year, and at the same time reduce computational complexity. To model the Intermittency of wind and solar power we allow them to contribute only a certain percentage of total capacity for each load segment based on empirical wind and solar capacity factors, relating demand to average capacity \cite{Pfenninger2016, Staffell2016, Chappin2017}. We do not model curtailment of renewables, or storage capabilities.
 
 Whilst fuel price is controlled by the user, there is inherent volatility in fuel price in a single year. To take into account this variability, an ARIMA model was fit to historical gas and coal price data \cite{coalprices,gasprices}. The standard deviation of the residuals was taken and then used to model the price of fuel that a generation company will buy fuel at in a given year. This takes into account differences in hedging strategies and chance between generation companies.
 
+Outages are modelled by using availability data of gas, coal, photovoltaic, offshore and onshore power generators \cite{Ltd2016, Hunt2015, carroll-j}. Plants bid a reduced percentage of their nameplate capacity and capacity factor based on their respective availability. Historical availabilities are modelled for older gas, coal and hydro power plants \cite{AlbertaSystemElectricOperator2016}.
 
+Operating period, pre-development and construction periods are taken from the UK Government Business, Energy and Industrial Strategy report \cite{Department2016}. Where historical power plants are modelled, and have been refurbished, we initialise their starting year randomly between 15 years prior to initialisation year and the initialisation year.
+
+
+\subsection{Spot Market}
+
+The buying and selling of electricity is modelled as a spot market, where each year, electricity is bought and sold in merit order. GenCos place bids for each of their plants at their short run marginal cost. We assume that there is no market power, as from analysis of the electricity prices in the UK, very high or very low electricity price are uncommon.
+
+\subsection{Investment}
+
+Investments are made on a yearly basis. Investment decisions are made purely on net present value calculations. The order in which GenCos invest in each simulated year is randomised as to not give agents an advantage.
+
+Agents have imperfect information, and therefore fuel and carbon prices are predicted using linear regression, with a training period selected uniformly between the 3 and 7 years, to model heterogeneity of GenCos. Demand is modelled through the use of an exponential function, due to compounded growth.
+
+GenCos only bid if they have 25\% of the upfront capital costs, with the rest of the capital provided through equity and debt. This is modelled as a weighted average cost of capital (WACC) of 5.9\% for non-nuclear power plants, and 10\% for nuclear power plants \cite{KPMG2017, Paper2012}. The WACC is used as the discount rate for net present value calculations. Each GenCo is initialised with a slightly different WACC and discount rate based on a uniform distribution, with a $\pm$3\% standard deviation. This allows us to model the variability in discount rates/WACC that GenCos may have, based on differing reputations.
+
+The sale price of electricity in the future reference year is predicted by each generation company simulating the same merit-order market algorithm that is used for the spot market. They simulate the behaviour of power plants that will be in operation by the reference year.
 
 
 \begin{itemize}
