@@ -1,9 +1,19 @@
 
-ElecSIM has been designed for ease of use to enable non-experts to rapidly test policy ideas. The core to this has been the design of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants to be initialized, power plant costs, electricity demand and availability factors to be set. This allows for the initialisation of different countries and different scenarios to be tested.s
+ElecSIM has been designed for ease of use to enable non-experts to rapidly test policy ideas. The core to this has been the design of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants to be initialized, power plant costs, electricity demand and availability factors to be set. This allows for the initialisation of different countries and different scenarios to be tested.
 
-ElecSIM is made up of 3 different agent types, GenCos (Generation Companies), a Power Exchange, and a Demand agent. GenCos are initialised as real life generation companies and initialised with their respective power plants. GenCos are also given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
+ElecSIM is made up of 2 different agent types, GenCos (Generation Companies) and a Demand agent. GenCos can be initialised as to the wishes of the user. Either according to real life, or a toy example. Each of the GenCos are initialised with their respective power plants. GenCos are also given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
 
-Power plant costs are initialised using the UK overnment Department for Business and Energy report \cite{Department2016}, with costs interpolated for plants of unknown capacity, and where the capacity of a power plant is larger or smaller than that in the report, the cost parameters for the largest/smallest power plants are used.
+ElecSIM's power generation costs is initialised using the UK government Department for Business and Energy power plant generation report \cite{Department2016}. This contains information such as capital costs and operation and maintenance costs, including details such as insurance and connection costs. Where there are power plants of a size that is not included in the  costs the parameters are linearly interpolated. Where the capacity of a power plant is larger or smaller than the data points in the report, the parameters are extrapolated by using the last known data point.
+
+For historical power plants, we used historical levels of levelised cost of energy (LCOE). Each parameter was scaled linearly from the modern LCOE, to attain the relevant historical LCOE. This was achieved by using linear optimisation, and therefore can be changed based on an individual user's country and dataset by customising the contraints. As well as historical LCOE, historical plant efficiency was taken into account for Gas and Coal power plants.
+
+When initialised, the variable operation and maintenance costs are selected from a uniform distribution, which can be set by the user. This enables variance in costs between individual power plants for processes such as preventative and corrective maintenance, labour costs and skill, health and safety and chance.  
+
+As per \cite{Chappin2017}, we split the electricity demand for one year and split this into 19 load segments. This enabled us to model the varying demand of electricity throughout a year, and at the same time reduce computational complexity. To model the Intermittency of wind and solar power we allow them to contribute only a certain percentage of total capacity for each load segment based on empirical wind and solar capacity factors, relating demand to average capacity \cite{Pfenninger2016, Staffell2016, Chappin2017}.
+
+Whilst fuel price is controlled by the user, there is inherent volatility in fuel price in a single year. To take into account this variability, an ARIMA model was fit to historical gas and coal price data \cite{coalprices,gasprices}. The standard deviation of the residuals was taken and then used to model the price of fuel that a generation company will buy fuel at in a given year. This takes into account differences in hedging strategies and chance between generation companies.
+
+
 
 
 \begin{itemize}
