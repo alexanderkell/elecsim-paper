@@ -1,5 +1,13 @@
 
-ElecSIM has been designed for ease of use to enable non-experts to rapidly test policy ideas. The core to this has been the design of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants to be initialized, power plant costs, electricity demand and availability factors to be set. This allows for the initialisation of different countries and different scenarios to be tested.
+ElecSIM has been designed for ease of use to enable non-experts to rapidly test different policies and the outcome of various different scenarios such as demand growth. The core to this has been the use of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants, power plant costs, electricity demand and availability factors to be set. This allows for the initialisation of different countries and different scenarios to be tested.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{figures/System overview.pdf}
+	\caption{ElecSIM}
+	\Description{The 1907 Franklin Model D roadster.}
+\end{figure}
+
 
 ElecSIM is made up of 2 different agent types, GenCos (Generation Companies) and a Demand agent. GenCos can be initialised as to the wishes of the user. Either according to real life, or a toy example. Each of the GenCos are initialised with their respective power plants. GenCos are also given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
 
@@ -17,6 +25,8 @@ Outages are modelled by using availability data of gas, coal, photovoltaic, offs
 
 Operating period, pre-development and construction periods are taken from the UK Government Business, Energy and Industrial Strategy report \cite{Department2016}. Where historical power plants are modelled, and have been refurbished, we initialise their starting year randomly between 15 years prior to initialisation year and the initialisation year.
 
+Power plants are taken out of service if they have been unprofitable for 
+
 
 \subsection{Spot Market}
 
@@ -26,7 +36,7 @@ The buying and selling of electricity is modelled as a spot market, where each y
 
 Investments are made on a yearly basis. Investment decisions are made purely on net present value calculations. The order in which GenCos invest in each simulated year is randomised as to not give agents an advantage.
 
-Agents have imperfect information, and therefore fuel and carbon prices are predicted using linear regression, with a training period selected uniformly between the 3 and 7 years, to model heterogeneity of GenCos. Demand is modelled through the use of an exponential function, due to compounded growth.
+Agents have imperfect information, and therefore fuel and carbon prices are predicted using linear regression, with a training period selected uniformly between the 3 and 7 years, to model heterogeneity of GenCos. Demand is modelled through the use of an exponential function, due to compounded growth, however if a reasonable fit is not found linear regression is used instead.
 
 GenCos only bid if they have 25\% of the upfront capital costs, with the rest of the capital provided through equity and debt. This is modelled as a weighted average cost of capital (WACC) of 5.9\% for non-nuclear power plants, and 10\% for nuclear power plants \cite{KPMG2017, Paper2012}. The WACC is used as the discount rate for net present value calculations. Each GenCo is initialised with a slightly different WACC and discount rate based on a uniform distribution, with a $\pm$3\% standard deviation. This allows us to model the variability in discount rates/WACC that GenCos may have, based on differing reputations.
 
