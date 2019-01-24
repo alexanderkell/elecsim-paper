@@ -1,5 +1,5 @@
 
-ElecSIM has been designed for ease of use to enable non-experts to rapidly test different policies and the outcome of various different scenarios such as demand growth. The core to this has been the use of a scenario file. This single file allows exogenous variables such as fuel cost, carbon taxes, power plants, power plant costs, electricity demand and availability factors to be set. This allows for the initialisation of different countries and different scenarios to be tested.
+ElecSIM has been designed for ease of use to enable non-experts to rapidly test different policies and the outcome of various scenarios such as demand growth. The user is able to input exogenous variables such as fuel cost, carbon taxes, power plants, power plant costs, electricity demand and availability factors. This allows for the initialisation of different countries and scenarios to be tested.
 
 
 \subsection{High-Level Overview}
@@ -29,7 +29,9 @@ For historical power plants, we used historical costs of Levelised Cost of Energ
 
 When initialised, the variable operation and maintenance costs are selected from a uniform distribution, with the ability for the user to set maximum and minimum percentage increase from the BEIS report. This enables variance in costs between individual power plants for processes such as preventative and corrective maintenance, labour costs and skill, health and safety and chance.  
 
-As per \cite{Chappin2017}, we created a load duration curve of the electricity demand for one year with 19 segments. This enabled us to model the varying demand of electricity throughout a year, and at the same time reduce computational complexity. To model the Intermittency of wind and solar power we allow them to contribute only a certain percentage of total capacity for each load segment based on empirical wind and solar capacity factors, relating demand to average capacity \cite{Pfenninger2016, Staffell2016, Chappin2017}. However, we do not model curtailment of renewables, or storage capabilities.
+As per \cite{Chappin2017}, we created a load duration curve of the electricity demand for one year with 19 segments. 19 segments enabled us to capture the varying demand of electricity throughout a year to a high enough degree of accuracy, but also reduce computational complexity. To model the Intermittency of wind and solar power we allow them to contribute only a certain percentage of total capacity for each load segment based on empirical wind and solar capacity factors, relating demand to average capacity \cite{Pfenninger2016, Staffell2016, Chappin2017}. The requirement of storage to provide constant electricity from intermittent resources is an important issue. However, due to our model taking yearly time steps, we are unable to model short term variability in electricity demand. We also, do not model long-term storage due to its currently limited liability. 
+
+However, we do not model curtailment of renewables, or storage capabilities. 
 
 Whilst fuel price is controlled by the user, there is inherent volatility in fuel price in a single year. To take into account this variability, an ARIMA model was fit to historical gas and coal price data \cite{coalprices,gasprices}. The standard deviation of the residuals was used to model the price of fuel that a generation company will buy fuel at in a given year. This takes into account differences in hedging strategies and chance between generation companies.
 
@@ -37,7 +39,7 @@ Outages are modelled by using availability data of gas, coal, photovoltaic, offs
 
 With historical power plants which have been refurbished, we sample their initialisation randomly between 15 years prior to initialisation year and the initialisation year.
 
-Power plants are taken out of service if they have not sold any electricity in the past 7 years.
+Power plants are taken out of service if they have not sold any electricity in the past 7 years. We decided upon this due to the fact that power generators have high, sunk capital costs, which often have high demolition costs. We assume, therefore, that generator companies are willing to wait $~\frac{1}{4}$ of their lives to see if a pay-out occurs due to the breakdown of competing power plants, increasing demand, or governmental support in the form of a tax.
 
 
 \subsubsection{Spot Market}
