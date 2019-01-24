@@ -4,7 +4,7 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 
 \subsection{High-Level Overview}
 
-A schematic of ElecSIM is displayed in figure \ref{fig:system_overview}. We have provided data sources to calibrate the model, for instance, historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. Unless otherwise stated, these data have been calibrated to the UK or Europe.
+A schematic of ElecSIM is displayed in Figure \ref{fig:system_overview}. We have provided data sources to calibrate the model, for instance, historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. Unless otherwise stated, these data have been calibrated to the UK or Europe.
 
 The configuration file give the ability to the user to rapidly change scenarios, and points to the various previously mentioned data sources. This data is then used to calibrate the GenCos and demand agent. GenCos then invest in power plants based on the highest positive net present value (NPV). Bids are made for each power plant based on the power plants short run marginal cost. A power exchange operator matches these bids with demand in merit order. 
 
@@ -21,11 +21,11 @@ This is then repeated for each year of the simulation.
 
 \subsection{Detailed Overview}
 
-ElecSIM is made up of 2 different agent types, GenCos (Generation Companies) and a Demand agent. GenCos can be initialised by the user. For example, to a desired country, or a toy-example. Each of the GenCos are initialised with their respective power plants. GenCos are given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
+ElecSIM is made up of two different agent types, GenCos (Generation Companies) and a Demand agent. GenCos can be initialised by the user. For example, to a desired country, or a toy-example. Each of the GenCos are initialised with their respective power plants. GenCos are given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
 
-\subsubsection{Data Initialisation}ElecSIM's power generation costs is initialised using the UK government Department for Business, Energy and Industrial Strategy (BEIS) power plant generation report \cite{Department2016}. This contains information such as capital costs and operation and maintenance costs, including details such as insurance and connection costs. Where there are power plants of a size that is not included in this report the parameters are linearly interpolated. Where the capacity of a power plant is larger or smaller than the data points in the report, the parameters are extrapolated by using the last known data point.
+\subsubsection{Data Initialisation}ElecSIM's power generation costs is initialised using the UK government Department for Business, Energy and Industrial Strategy (BEIS) power plant generation report \cite{Department2016}. This contains information such as capital costs and operation and maintenance costs, including details such as insurance and connection costs. Where there are power plants of a size not included in this report, the parameters are linearly interpolated. Where the capacity of a power plant is larger or smaller than the data points in the report, the parameters are extrapolated by using the last known data point.
 
-For historical power plants, we used historical costs of levelised cost of energy (LCOE). Each parameter was scaled linearly from the modern LCOE calculated from the BEIS report, to attain the relevant historical LCOE. This was achieved by using linear optimisation, and therefore each parameter can be changed based on an individual user's country and dataset by modifying the constraints. As well as historical LCOE, historical plant efficiency was taken into account for gas and coal power plants \cite{EIA2013}.
+For historical power plants, we used historical costs of Levelised Cost of Energy (LCOE) \cite{Dale2013}. Each parameter was scaled linearly from the modern LCOE calculated from the BEIS report, to attain the relevant historical LCOE. This was achieved by using linear optimisation, and therefore each parameter can be changed based on an individual user's country and dataset by modifying these constraints. As well as historical LCOE, historical plant efficiency was taken into account for gas and coal power plants \cite{EIA2013}.
 
 When initialised, the variable operation and maintenance costs are selected from a uniform distribution, with the ability for the user to set maximum and minimum percentage increase from the BEIS report. This enables variance in costs between individual power plants for processes such as preventative and corrective maintenance, labour costs and skill, health and safety and chance.  
 
@@ -42,7 +42,7 @@ Power plants are taken out of service if they have not sold any electricity in t
 
 \subsubsection{Spot Market}
 
-The buying and selling of electricity is modelled as a spot market, where each year, electricity is bought and sold in merit order. GenCos place bids for each of their plants at their respective short run marginal cost. We assume that generator companies do not have market power, however we set the lost load to be £6000 to encourage investment as per the recommendations of the UK government \cite{DECC2013}.
+The buying and selling of electricity is modelled as a spot market, where each year, electricity is bought and sold in merit order. GenCos place bids for each of their plants at their respective short run marginal cost. We assume that generator companies do not have market power, however we set the lost load to be \textsterling6000 to encourage investment as per the recommendations of the UK government \cite{DECC2013}.
 
 \subsubsection{Investment}
 
