@@ -1,5 +1,22 @@
 Live experimentation of physical processes is often not practical. The costs of real life experimentation can be prohibitively high, and it normally requires significant time in order to fully ascertain the long-term trends. There is also a risk that changes can have detrimental impacts ~\cite{Forshaw2016}. These factors are particularly true for an electricity market, where decisions made can have long term impacts on energy mix, carbon emissions and agent behaviour.  A solution to this is simulation, which can be used for rapid testing and prototyping of ideas. Simulation is the substitution of a physical process with a computer model. The computer model is parametrised by real world data and phenomena. The user is then able to experiment using this model, and assess the likelihoods of outcomes under certain scenarios and input variables \cite{Law:603360}.
 
+\begin{table*}[t]
+	\begin{tabular*}{\textwidth}{|l|c|c|c|c|c|}
+		\hline
+\multicolumn{1}{|c|}{\textbf{Tool name}} & \textbf{Open Source} & \textbf{Investment} & \textbf{Market} & \textbf{Stochastic Inputs} & \textbf{Generalisable} \\ \hline
+SEPIA                                    & \checkmark           & x                   & \checkmark      & Demand                     &                        \\ \hline
+EMCAS                                    & x                    & \checkmark          & \checkmark      & Outages                    & \checkmark             \\ \hline
+NEMSIM                                   & Unknown              & \checkmark          & \checkmark      & x                          & x                      \\ \hline
+AMES                                     & \checkmark           & x                   & Day-ahead       & x                          & x                      \\ \hline
+PowerACE                                 & x                    & \checkmark          & \checkmark      & Outages/Demand             & EU                     \\ \hline
+MACSEM                                   & Unknown              & x                   & \checkmark      & x                          & \checkmark             \\ \hline
+GAPEX                                    & Unknown              & x                   & Day-ahead       & x                          & \checkmark             \\ \hline
+EMLab                                    & \checkmark           & \checkmark          & Futures         & x                          & \checkmark             \\ \hline
+ElecSIM                                  & \checkmark           & \checkmark          & Futures         & \checkmark                 & \checkmark             \\ \hline
+
+	\end{tabular*}
+\end{table*}
+
 Energy policy modelling is an example where simulation can be used. Real-life experimentation of energy policy is not always feasible, and as discussed, decisions can have long-term impacts. A number of different simulations and computer models have been used to aid policy makers and energy market developers in coming to informed conclusions.
 
 Energy models can typically be classified as top-down macro-economic models or bottom-up techno-economic models~\cite{Bohringer1998}. Top-down models generally focus on behavioural realism with a focus on macro-economic metrics. They are useful for studying economy-wide responses to policies. ~\cite{Hall2016}, for example MARKAL-MACRO \cite{Fishbone1981} and LEAP \cite{Heaps2016}. Bottom-up models represent the energy sector in detail, and are written as mathematical programming problems~\cite{Gargiulo2013}. They detail technology explicitly, and can include cost and emissions implications~\cite{Hall2016}.
@@ -8,9 +25,11 @@ It is possible to further categorise bottom-up models into optimisation and simu
 
 However, electricity market liberalisation in many Western democracies has changed the framework conditions. Centralised, monopolistic, decision making entities has given way to multiple heterogeneous agents acting in their own best interest~\cite{Most2010}. Therefore, certain policy options which encourage changes must be used by a central planner to attain a desired outcome, for example carbon taxes or subsidies. It is therefore proposed that these complex agents are modelled using agent-based modelling.
 
-As a result of this, agent-based simulation has received increasing attention in recent years, and a number of simulation tools have emerged, for example SEPIA~\cite{Kraan2018} EMCAS~\cite{Conzelmann}, NEMSIM~\cite{Batten2006}, AMES~\cite{Sun2007}, PowerACE~\cite{Rothengatter2007}, MACSEM~\cite{Praca2003}, GAPEX~\cite{Cincotti2013} and  EMLab~\cite{Chappin2017}. However, none of which suit the needs of an open source, long-term market model which has a stochastic representation of input variables.
+As a result of this, agent-based simulation has received increasing attention in recent years, and a number of simulation tools have emerged, for example SEPIA~\cite{Harp2000} EMCAS~\cite{Conzelmann}, NEMSIM~\cite{Batten2006}, AMES~\cite{Sun2007}, PowerACE~\cite{Rothengatter2007}, ~\cite{Praca2003}, GAPEX~\cite{Cincotti2013} and  EMLab~\cite{Chappin2017}. However, none of which suit the needs of an open source, long-term market model which has a stochastic representation of input variables.
 
-SEPIA \cite{Harp2000} is a discrete event agent based model which utilises Q-learning for agent behaviour. SEPIA models plants as being always on, and does not have an independent system operator (ISO), which in an electricity market, is an independent non-profit organization for coordinating and controlling of regular operations of the electric power system and market  \cite{Zhou2007}. SEPIA does not model a spot market, instead focusing on bilateral contracts. As opposed to this, ElecSIM has been designed with a merit-order, spot market in mind, with peaker power plants running at times of high demand, and renewable energy supply running intermittently.
+SEPIA \cite{Harp2000} is a discrete event agent based model which utilises Q-learning for agent behaviour. SEPIA models plants as being always on, and does not have an independent system operator (ISO), which in an electricity market, is an independent non-profit organization for coordinating and controlling of regular operations of the electric power system and market  \cite{Zhou2007}. SEPIA does not model a spot market, instead focusing on bilateral contracts. As opposed to this, ElecSIM has been designed with a merit-order, spot market in mind and renewable energy supply running intermittently.
+
+MACSEM \cite{Praca2003} simulates a bilateral and pool market. It has been used to probe the effects of market rules and conditions by simulating and testing different bidding strategies. However, MACSEM does not model long term investment decisions.
 
 EMCAS ~\cite{Conzelmann} is a closed source agent-based framework which investigates the interactions between physical infrastructures and economic behaviour of market participants. ElecSIM, however, focuses on purely the dynamics on the market, with an aim of providing a simplified, transparent, open source model of market operation, whilst maintaining robustness.
 

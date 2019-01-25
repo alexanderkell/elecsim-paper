@@ -1,0 +1,10 @@
+﻿Tool name,Open Source,Long-Term Investment,Market,Stochastic Inputs,Country Generalisability
+SEPIA,\checkmark,x,\checkmark,Demand,
+EMCAS,x,\checkmark,\checkmark,Outages,\checkmark
+NEMSIM,Unknown,\checkmark,\checkmark,x,x
+AMES,\checkmark,x,Day-ahead,x,x
+PowerACE,x,\checkmark,\checkmark,Outages/Demand,EU
+MACSEM,Unknown,x,\checkmark,x,\checkmark
+GAPEX,Unknown,x,Day-ahead,x,\checkmark
+EMLab,\checkmark,\checkmark,Futures,x,\checkmark
+ElecSIM,\checkmark,\checkmark,Futures,\checkmark,\checkmark
