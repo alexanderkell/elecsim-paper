@@ -1,4 +1,4 @@
-Type,Capacity,Year,efficiency,operating_period,pre_dev_period,construction_period,pre_dev_cost_per_mw,construction_cost_per_mw,infrastructure,fixed_o_and_m_per_mw,variable_o_and_m_per_mwh,insurance_cost_per_mw,connection_cost_per_mw
+Type,Capacity,Year,$\eta$,$OP$,$P_D$,$C_D$,$P_C$,$C_C$,$I_C$,$F_C$,$V_C$,$In_C$,$Con_C$
 CCGT,168.0,1980,0.34,25,3,3,"207,345","2,419,027","46,998","97,452",22,"10,021","11,403"
 CCGT,168.0,1990,0.34,25,3,3,"181,208","2,114,099","41,073","85,167",13,"8,758","9,966"
 CCGT,168.0,2000,0.34,25,3,3,"116,407","1,358,089","26,385","54,711",10,"5,626","6,402"
