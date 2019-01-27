@@ -2,32 +2,13 @@
 \clearpage
 \subsection{Parameters}
 
-
-\begin{table}[h]
-	\begin{tabular}{|l|c|}
-		\hline
-		\textbf{Parameter} & \textbf{Notation} \\ \hline
-		Efficiency & $\eta$ \\ \hline
-		Operating Period & $OP$ \\ \hline
-		Pre-development Period & $P_D$ \\ \hline
-		Construction Period & $C_D$ \\ \hline
-		Pre-development Cost & $P_C$ \\ \hline
-		Construction Cost & $C_C$ \\ \hline
-		Infrastructure & $I_C$ \\ \hline
-		Fixed Operation and Maintenance & $F_C$ \\ \hline
-		Variable Operation and Maintenance & $V_C$ \\ \hline
-		Insurance Cost & $In_C$ \\ \hline
-		Connection Cost & $Con_C$ \\ \hline
-	\end{tabular}
-	\caption{Table showing notation of parameters for power plant costs.}
-	\label{table:parameter_notation_table}
-\end{table}
+\csvautobooktabular{tables/notation_formated.csv}
 
 
 \begin{table*}[]
 	\begin{tabularx}{\linewidth}{|p{\dimexpr.5\linewidth-40\tabcolsep-1.3333\arrayrulewidth}|l|x|l|l|l|l|l|l|l|l|l|l|l|}
 \hline
-Type & Plant\_Size & year & $\eta$ & $OP$ & $P_D$ & $C_D$ & $P_C$ & $C_C$ & $I_C$ & $F_C$ & $V_C$ & $In_C$ & $Con_C$ \\ \hline
+Type & Capacity & Year & $\eta$ & $OP$ & $P_D$ & $C_D$ & $P_C$ & $C_C$ & $I_C$ & $F_C$ & $V_C$ & $In_C$ & $Con_C$ \\ \hline
 \multirow{3}{*}{CCGT} & 168.0 & 2018, 2020, 2025 & 0.34 & 25.0 & 3 & 3 & 60,000.0 & 700,000.0 & 13,600.0 & 28,200.0 & 5.0 & 2,900.0 & 3,300.0 \\ \cline{2-14} 
 & 1200.0 & 2018, 2020, 2025 & 0.54 & 25.0 & 3 & 3 & 10,000.0 & 500,000.0 & 15,100.0 & 12,200.0 & 3.0 & 2,100.0 & 3,300.0 \\ \cline{2-14} 
 & 1471.0 & 2018, 2020, 2025 & 0.53 & 25.0 & 3 & 3 & 10,000.0 & 500,000.0 & 15,100.0 & 11,400.0 & 3.0 & 1,900.0 & 3,300.0 \\ \hline
@@ -86,7 +67,7 @@ Reciprocating Engine (Gas) & 20.0 & 2018, 2020, 2025 & 0.32 & 15.0 & 2 & 1 & 10,
 \begin{table}[]
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 		\hline
-		Type & Plant\_Size & Year & $\eta$ & $OP$ & $P_D$ & $C_D$ & $P_C$ & $C_C$ & $I_C$ & $F_C$ & $V_C$ & $In_C$ & $Con_C$ \\ \hline
+		Type & Capacity & Year & $\eta$ & $OP$ & $P_D$ & $C_D$ & $P_C$ & $C_C$ & $I_C$ & $F_C$ & $V_C$ & $In_C$ & $Con_C$ \\ \hline
 		\multirow{12}{*}{CCGT} & 168.0 & 1980 & 0.34 & 25 & 3 & 3 & 207,345 & 2,419,027 & 46,998 & 97,452 & 22 & 10,021 & 11,403 \\ \cline{2-14} 
 		& 168.0 & 1990 & 0.34 & 25 & 3 & 3 & 181,208 & 2,114,099 & 41,073 & 85,167 & 13 & 8,758 & 9,966 \\ \cline{2-14} 
 		& 168.0 & 2000 & 0.34 & 25 & 3 & 3 & 116,407 & 1,358,089 & 26,385 & 54,711 & 10 & 5,626 & 6,402 \\ \cline{2-14} 
