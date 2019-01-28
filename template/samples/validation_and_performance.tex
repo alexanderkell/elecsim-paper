@@ -5,7 +5,9 @@ Jager posits that a certain outcome or development path, captured by empirical d
 
 We begin by comparing the price duration curve in the year 2018. Figure \ref{fig:price_duration_curve} shows the N2EX Day Ahead Auction Prices of the UK \cite{nordpool_2019}, the stochastic simulated electricity prices, and the non-stochastic electricity price throughout the year 2018.
 
-It can be seen that adding stochasticity to fuel prices and variable operation \& maintenance improves accuracy of electricity prices in the initialisation year.
+Table \ref{table:validation_metrics} shows performance metrics of the stochastic and non-stochastic runs versus the actual price duration curve. It can be seen that stochastic implementation (ElecSIM), improves the mean absolute error (MAE) by $52.5\%$.
+
+It can be seen that adding stochasticity to fuel prices and variable operation \& maintenance improves accuracy of electricity prices by  in the initialisation year.
 
 
 \begin{figure}[h]
@@ -20,6 +22,7 @@ It can be seen that adding stochasticity to fuel prices and variable operation \
 	\centering
 	\csvautobooktabular{tables/validation/initialisation_run_validation.csv}
 	\caption{Validation performance metrics.}
+	\label{table:validation_metrics}
 \end{table}
 
 
