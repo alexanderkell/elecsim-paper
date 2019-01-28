@@ -1,4 +1,12 @@
 
+Validation of models is important to ascertain that the results are accurate. However, it should be noted that these long-term simulations are not predictions of the future, rather possible outcomes based upon certain assumptions. Therefore, the results from ElecSIM should be analysed by understanding the underlying assumptions of the model, and comparing inputs to outcomes.
+
+Jager posits that a certain outcome or development path, captured by empirical data, might have developed in a completely different direction due to chance \cite{Jager2006a}. However, through observation, the processes that emerge from a model should be realistic and in keeping with expected behaviour \cite{Jager2006}.
+
+We begin by comparing the price duration curve in the year 2018. Figure \ref{fig:price_duration_curve} shows the N2EX Day Ahead Auction Prices of the UK \cite{nordpool_2019}, the stochastic simulated electricity prices, and the non-stochastic electricity price throughout the year 2018.
+
+It can be seen that adding stochasticity to fuel prices and variable operation \& maintenance improves accuracy of electricity prices in the initialisation year.
+
 
 \begin{figure}[h]
 	\begin{center}
@@ -7,6 +15,12 @@
 		\label{fig:price_duration_curve}
 	\end{center}
 \end{figure}
+
+\begin{table}[h]
+	\centering
+	\csvautobooktabular{tables/validation/initialisation_run_validation.csv}
+	\caption{Validation performance metrics.}
+\end{table}
 
 
 
