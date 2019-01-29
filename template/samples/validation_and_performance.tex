@@ -1,5 +1,5 @@
 
-Validation of models is important to ascertain that the results are accurate. However, it should be noted that these long-term simulations are not predictions of the future, rather possible outcomes based upon certain assumptions. Therefore, the results from ElecSIM should be analysed by understanding the underlying assumptions of the model, and comparing inputs to outcomes.
+\subsection{Validation} Validation of models is important to ascertain that the results are accurate. However, it should be noted that these long-term simulations are not predictions of the future, rather possible outcomes based upon certain assumptions. Therefore, the results from ElecSIM should be analysed by understanding the underlying assumptions of the model, and comparing inputs to outcomes.
 
 Jager posits that a certain outcome or development path, captured by empirical data, might have developed in a completely different direction due to chance \cite{Jager2006a}. However, through observation, the processes that emerge from a model should be realistic and in keeping with expected behaviour \cite{Jager2006}.
 
@@ -28,7 +28,13 @@ We found that the net present value (NPV) calculations are realistic, with onsho
 	\label{table:validation_metrics}
 \end{table}
 
+\subsection{Performance and Implementation}
 
+ElecSIM was built using python, this enabled us to lower barriers to entry and allow for users to integrate state-of-the-art machine learning and statistical packages in future work. We used project mesa as an open source agent based modelling framework for its ease of use \cite{Masad2015}.
+
+ We utilised Microsoft Azure Public Cloud. We used two virtual machines of 64 vCPU's each (D64 v3), which are built using Intel Broadwell E5-2673 v4 2.3GHz processor, and the Intel Haswell 2.4 GHz E5-2673 v3. They have a combined total of 256GB of memory and use a Linux operating system. This enabled us to rapidly prototype different demand and carbon price scenarios, and produce multiple iterations to gain a variance.
+
+Development and testing was done on a MacBook Pro with a quad-core 3.1GHz Intel Core i7 processor with 16 GB 1867 MHz DDR3 of RAM and a 500GB solid state drive (SSD).
 
 \begin{itemize}
 	\item Validation of model 
