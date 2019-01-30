@@ -3,14 +3,14 @@
 
 Jager posits that a certain outcome or development path, captured by empirical data, might have developed in a completely different direction due to chance \cite{Jager2006a}. However, through observation, the processes that emerge from a model should be realistic and in keeping with expected behaviour \cite{Jager2006}.
 
-We begin by comparing the price duration curve in the year 2018. Figure \ref{fig:price_duration_curve} shows the N2EX Day Ahead Auction Prices of the UK \cite{nordpool_2019}, the stochastic simulated electricity prices, and the non-stochastic electricity price throughout the year 2018.
+We begin by comparing the price duration curve in the year 2018. Figure \ref{fig:price_duration_curve} shows the N2EX Day Ahead Auction Prices of the UK \cite{nordpool_2019}, the stochastic simulated electricity prices, and the non-stochastic electricity price throughout the year 2018. The variance of the simulated stochastic runs were achieved by making 40 runs and removing outliers.
 
 Table \ref{table:validation_metrics} shows performance metrics of the stochastic and non-stochastic runs versus the actual price duration curve. It can be seen that stochastic implementation (ElecSIM), improves the mean absolute error (MAE) by $52.5\%$.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/load_price_duration_curve_comparison.pdf}
-		\caption{Price duration curve which compares real electricity prices to those paid in ElecSIM with stochasticity (40 runs) and no stochasticity.}
+		\caption{Price duration curve which compares real electricity prices to those paid in ElecSIM with and without stochasticity.}
 		\label{fig:price_duration_curve}
 	\end{center}
 \end{figure}
