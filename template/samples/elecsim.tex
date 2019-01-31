@@ -31,6 +31,16 @@ This is then repeated for each year of the simulation.
 
 ElecSIM is made up of two different agent types, GenCos (Generation Companies) and a Demand agent. GenCos can be initialised by the user. For example, to a desired country, or a toy-example. Each of the GenCos are initialised with their respective power plants. GenCos are given a randomized discount rate, which can be set by the user, around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
 
+
+\begin{figure*}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{figures/detailed_overview.pdf}
+		\caption{ElecSIM simulation overview.}
+		\label{fig:system_overview}
+	\end{center}
+\end{figure*}
+
+
 \subsubsection{Data Initialisation}ElecSIM's power generation costs are initialised using the UK government Department for Business, Energy and Industrial Strategy (BEIS) power plant generation report \cite{Department2016}. This contains information such as capital costs and operation and maintenance costs ($F_C$ and $V_C$), including details such as insurance ($In_C$) and connection costs ($Con_C$). Where there are power plants of a size not included in this report, the parameters are linearly interpolated. Where the capacity of a power plant is larger or smaller than the data points in the report, the parameters are extrapolated by using the last known data point.
 
 For historical power plants, we used historical costs of Levelised Cost of Energy (LCOE) \cite{Dale2013}. Each parameter was scaled linearly from the modern LCOE calculated from the BEIS report, to attain the relevant historical LCOE. This was achieved by using linear optimisation, and therefore each parameter can be changed based on an individual user's country and dataset by modifying the constraints. As well as historical LCOE, historical plant efficiency was taken into account for gas and coal power plants \cite{EIA2013}.
