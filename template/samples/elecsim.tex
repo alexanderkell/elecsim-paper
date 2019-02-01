@@ -64,15 +64,15 @@ Fuel price and carbon price is forecast using a linear regression. Demand, howev
 
 These forecasted data is then used to simulate a market using the same electricity market algorithm that is detailed in Section \ref{sssec:electricity_market}. We simulate a market based on the expected bids -- based on SRMC -- that every operating power plant will make. This includes the removal of plants that will be past their life, and introduction of plants that are in construction or pre-development stages. 
 
-However, there may be scenarios where demand is forecast to grow significantly, and limited investments have, at this point, been made to meet demand at the point in the future. The expected price, would therefore be that of lost load. Where lost load is defined as the price customers would be willing to pay to avoid a disruption in their electricity supply. To avoid GenCos from predicting that large profits will be made, and under the assumption that further power plant investments will be made by other GenCos, the lost load price is replaced with a predicted electricity price based on prices at lower points on the demand curve. These prices are predicted using a linear regression. If zero segments of demand is met (high demand or low demand), then the lost load price is used to encourage significant investment.
+However, there may be scenarios where demand is forecast to grow significantly, and limited investments have, at this point, been made to meet demand at the point in the future to be modelled. The expected price, would therefore be that of lost load. Where lost load is defined as the price customers would be willing to pay to avoid a disruption in their electricity supply. To avoid GenCos from predicting that large profits will be made, and under the assumption that further power plant investments will be made by other GenCos, the lost load price is replaced with a predicted electricity price using a linear regression based on prices at lower points of the demand curve. These prices are predicted using a linear regression. If zero segments of demand is met (high demand or low demand), then the lost load price is used to encourage significant investment.
 
+Once expected fuel prices, carbon price, discount rate, and expected sale price of electricity are all forecasted, the NPV can be calculated. GenCos must typically provide a certain percentage of upfront capital, with the rest coming from investors in the form of stock and shares or debt (WACC). The percentage of upfront capital, or down payment, is set at $25\%$, but can be customised by the user in the configuration file. The GenCos then invest in the power plant with the highest NPV that they can afford with their cash, and this is repeated until they can no longer afford any more plants. We can reasonably make this assumption, as the NPV calculation provides information based upon which investments are worth more than money in a bank.
 
+\subsection{Power Plant Parameter Estimation}
 
+The estimation of power plant parameters is critical to electricity market models. Costs form an important element of markets and investment, and publicly available data for individual countries can be scarce. Thus, extrapolation and interpolation is required to estimate costs for power plants of differing sizes, types and years of construction.
 
-The discount rate refers to the interest rate used in discounted cash flow analysis to determine the present value of future cash flows.
-
-
-Investment differs for each GenCo based upon their discount rates and the amount of historical data they use to predict future fuel and carbon prices. These two 
+Further information is required to fully parametrise power plants. Data such as availability and capacity and load factor. 
 
 
 
