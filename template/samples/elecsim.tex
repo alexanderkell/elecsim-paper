@@ -4,6 +4,14 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 
 \subsection{High-Level Overview}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.97\linewidth]{figures/System_overview}
+	\caption{High level system overview demonstrating fundamental parts of ElecSIM.}
+	\label{fig:systemoverview}
+\end{figure}
+
+
 \begin{table}[h]
 	\centering
 	\csvautobooktabular{tables/notation_formated.csv}
@@ -13,7 +21,7 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 
 ElecSIM is made up of four fundamental parts: The agents, which are split up into demand and generation company (GenCo) agents. The world in which these agents exist. Power plants which are owned by the GenCo agents, and the Power Exchange which acts as a market to match GenCo owned power plants with electricity demand.
 
-A schematic of ElecSIM is displayed in Figure \ref{fig:system_overview} which shows these four fundamental parts, and how they interact.
+A schematic of ElecSIM is displayed in Figure \ref{fig:systemoverview} which shows these four fundamental parts, and how they interact.
 
 \subsubsection{Data parametrisation} To parametrise the world two sources are used. A configuration file and data files. The data files store information such as historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. This is data that does not change from scenario to scenario for a country realisation, however does change between country and country.
 
@@ -23,24 +31,32 @@ The demand agent is a simplified representation of aggregated demand in a countr
 
 \subsubsection{Generation Companies} The GenCos have two main functions. Investing in power plants and making bids to sell their electricity yearly for each of their power plants. We will first focus on the buying and selling of electricity using a Power Exchange, and then cover the investment algorithm for GenCos.
 
-Figure \ref{fig:powermarket} displays the process for each segment of demand. The Power Exchange receives bids for every single power station in the model world from each of the GenCos The final price paid to each of the GenCos is known as the spot price or the System Marginal Price (SMP). The spot price or SMP is the highest price that has been accepted to meet demand. This is paid to all generators regardless of their initial bid. For this reason, GenCos are motivated to bid their minimum profitable price to ensure that their bid is accepted. This minimum profitable price is known as the short run marginal cost (SRMC). The SRMC is the price that it costs a generator to sell a single unit of electricity. 
+Figure \ref{fig:powermarket} displays the process for each segment of demand. The Power Exchange receives bids for every single power station in the modelled world from each of the GenCos. The final price paid to each of the GenCos is known as the spot price or the System Marginal Price (SMP). The spot price or SMP is the highest price that has been accepted to meet demand. This is paid to all generators regardless of their initial bid. For this reason, GenCos are motivated to bid their minimum profitable price to ensure that their bid is accepted. This minimum profitable price is known as the short run marginal cost (SRMC). The SRMC is the price that it costs a generator to sell a single unit of electricity. 
 
  
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{figures/power_market}
-	\caption{Power exchange clearing \cite{nuclear_economics_consulting_group_2019}}
+	\caption{Power exchange clearing \cite{nuclear_economics_consulting_group_2019}.}
 	\label{fig:powermarket}
 \end{figure}
 
 \subsubsection{Investment}
 
-Investment in power plants is made upon a net present value (NPV) calculation. NPV is a summation of the present value of a series of present and future cash flow. NPV provides a method for evaluating and comparing investments with cash flows spread over many years, making it suited to evaluating power plants which have a long lifetime. NPV is is based upon the fact that current cash flow is worth more than future cash flow. This is due to the fact that money today can be invested and have a rate of return in the future. Meaning that, for example \$50,000 today is worth more than \$50,000
+Investment in power plants is made upon a net present value (NPV) calculation. NPV is a summation of the present value of a series of present and future cash flow. NPV provides a method for evaluating and comparing investments with cash flows spread over many years, making it suited to evaluating power plants which have a long lifetime. NPV is based upon the fact that current cash flow is worth more than future cash flow. This is due to the fact that money today can be invested and have a rate of return in the future. Meaning that, for example \$50,000 today is worth more than \$50,000. 
 
-Whilst investment decisions for each GenCo are based on the same algorithm, each GenCo has a slightly different return on investment and risk strategy. Each GenCo differs in the discount rate that they set for investments in power plants. The discount rate is based upon the concept of time value of money. Where money in the present is worth more than money in the future. For example, GenCos may value having money in the present rather than 20 years into the future more than other GenCos. This is down to particular GenCo risk tolerance, strategies and desired return on investment.
+Equation \ref{eq:npv_eq} displays the calculation of NPV. Where $t$ is the year of the cash flow. $i$ is the discount rate, $N$ is total number of periods, or lifetime of power plant, and $R_t$ is the net cash flow (cash inflow minus cash outflow) at time $t$.
 
-The discount rate can be set in the configuration file, and a deviation from this mean is selected for each GenCo based upon a sampling from a Gaussian distribution with a standard deviation of $\pm3\%$. This distribution was chosen to give sufficient variance between GenCos whilst remaining close to the mean set by the user.
+\begin{equation} \label{eq:npv_eq}
+NPV(i, N) = \sum_{t=0}^{N}\frac{R_t}{(1+t)^t}
+\end{equation}
+
+A discount rate set by a firm's weighted average cost of capital (WACC) is often used. Where WACC is the rate that a company is expected to pay on average for its stock and debt. However, it is often believed that a higher rate should be selected to adjust for differing risk profiles, opportunity cost and rate of return desired.
+
+Data is available for average WACC for power plants, and can be set in the configuration file. However, to account for differing risk profiles, opportunity costs, rate of return desired, and WACC based on companies' relative credit risk, we have sampled difference in discount rates from the mean WACC with a Gaussian distribution with a standard deviation of $\pm3\%$. Which was chosen to give sufficient variance between GenCos whilst remaining close to the mean set by the user.
+
+
 
 
 
