@@ -11,10 +11,34 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 \end{table}
 
 
+ElecSIM is made up of four fundamental parts: The agents, which are split up into demand and generation company (GenCo) agents. The world in which these agents exist. Power plants which are owned by the GenCo agents, and the Power Exchange which acts as a market to match GenCo owned power plants with electricity demand.
 
-A schematic of ElecSIM is displayed in Figure \ref{fig:system_overview}. We have provided data sources to calibrate the model, for instance, historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. Unless otherwise stated, these data have been calibrated to the UK or Europe.
+A schematic of ElecSIM is displayed in Figure \ref{fig:system_overview} which shows these four fundamental parts, and how they interact.
 
-The configuration file give the ability to the user to rapidly change scenarios, and points to the various previously mentioned data sources. This data is then used to calibrate the GenCos and demand agent. GenCos  invest in power plants based on the highest positive net present value (NPV). Bids are made for each power plant based on the power plants short run marginal cost. A power exchange operator matches these bids with demand in merit order. 
+To parametrise the world two sources are used. A configuration file and data files. The data files store information such as historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. This is data that does not change from scenario to scenario for a country realisation, however does change between country and country.
+
+To ensure rapid changes between scenarios, the configuration file enables the user to rapidly change scenarios, and points to the various previously mentioned data sources. The configuration file enables the changing of demand growth and load duration curve, which is the shape of demand curve over a year period. Future fuel and carbon prices, capital costs, plant availability, investment costs and simulation time. These data is then used to calibrate the world. 
+
+The demand agent is a simplified representation of aggregated demand in a country. Each year it multiplies the percentage of change in demand with the load duration curve. This data is used by the Power Exchange to match supply with demand.
+
+The GenCos have two main functions. Investing in power plants and making bids to sell their electricity yearly for each of their power plants. We will first focus on the buying and selling of electricity using a Power Exchange, and then cover the investment algorithm for GenCos.
+
+Figure \ref{fig:powermarket} displays the process for each segment of demand. The Power Exchange receives bids for every single power station in the model world from each of the GenCos The final price paid to each of the GenCos is known as the spot price or the System Marginal Price (SMP). The spot price or SMP is the highest price that has been accepted to meet demand. This is paid to all generators regardless of their initial bid. For this reason, GenCos are motivated to bid their minimum profitable price to ensure that their bid is accepted. This minimum profitable price is known as the short run marginal cost (SRMC). The SRMC is the price that it costs a generator to sell a single unit of electricity.  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{figures/power_market}
+	\caption{Power exchange clearing \cite{nuclear_economics_consulting_group_2019}}
+	\label{fig:powermarket}
+\end{figure}
+
+
+
+Investment differs for each GenCo based upon their discount rates and the amount of historical data they use to predict future fuel and carbon prices. These two 
+
+
+
+%GenCos  invest in power plants based on the highest positive net present value (NPV). Bids are made for each power plant based on the power plants short run marginal cost. A Power Exchange operator matches these bids with demand in merit order. 
 
 This is then repeated for each year of the simulation.
 
@@ -95,7 +119,7 @@ The sale price of electricity in the future reference year is predicted by each 
 %		\item Estimated sale of electricity price calculated by simulating a market 7 years into the future with expected power plants that are running and have been taken out of service.
 %		\item Investors will only invest if they have 25\% of the total upfront costs. (the rest taken on by debt and equity as assumed by WACC value.)
 %		\item Intermittent power generators can only submit a certain percentage of their total capacity for each load segment. This percentage is matched with empirical data.
-%		\item Bids accepted by a centralised power exchange based on merit order. Generation companies bid their short run marginal cost.
+%		\item Bids accepted by a centralised Power Exchange based on merit order. Generation companies bid their short run marginal cost.
 %	\end{itemize}
 %	\item Assumptions: 
 %	\begin{itemize}
