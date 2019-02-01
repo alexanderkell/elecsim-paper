@@ -12,11 +12,6 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 \end{figure}
 
 
-\begin{table}[h]
-	\centering
-	\csvautobooktabular{tables/notation_formated.csv}
-	\caption{Parameter notation.}
-\end{table}
 
 
 ElecSIM is made up of four fundamental parts: The agents, which are split up into demand and generation company (GenCo) agents. The world in which these agents exist. Power plants which are owned by the GenCo agents, and the Power Exchange which acts as a market to match GenCo owned power plants with electricity demand.
@@ -72,7 +67,22 @@ Once expected fuel prices, carbon price, discount rate, and expected sale price 
 
 The estimation of power plant parameters is critical to electricity market models. Costs form an important element of markets and investment, and publicly available data for individual countries can be scarce. Thus, extrapolation and interpolation is required to estimate costs for power plants of differing sizes, types and years of construction.
 
-Further information is required to fully parametrise power plants. Data such as availability and capacity and load factor. 
+We enable users to initialise costs relevant to their particular country. They can provide highly detailed costs, with the parameters shown in Table \ref{table:parameter_notation}. Efficiency ($\eta$) is defined as the percentage of energy from a fossil fuel that is converted into electrical energy. Operating period ($OP$) is the total period in which a power plant is in operation. Pre-development period ($P_D$) includes the pre-licensing, technical and design costs, as well as costs incurred due to regulatory, licensing and public enquiry \cite{Ltd2016}. The construction period $C_D$ and construction costs $C_C$ are incurred during the development of the plant, excluding network connections. The infrastructure costs $I_C$ are the costs incurred by the developer in connecting the plant to the electricity or gas grid. 
+
+
+
+\begin{table}[h]
+	\centering
+	\csvautobooktabular{tables/notation_formated.csv}
+	\caption{Parameter notation.}
+	\label{table:parameter_notation}
+\end{table}
+
+Further information is required to fully parametrise power plants. Data such as availability and capacity factor is required to accurately model the ability of power plants to meet demand. Availability is the percentage of time that a power plant could possibly produce electricity over a given time period. Availability can be reduced by forced and planned outages. In addition to this, older plants have lower availability factors than newer plants, therefore both current and historical data is required. 
+
+Capacity factor is the actual electrical energy produced over a given time period divided by the maximum possible electrical energy it could have produced. In contrast to availability, capacity factor can be impacted by regulatory constraints, market forces and resource availability. For solar and wind, capacity factors can change significantly with time. Higher capacity factors are common for solar installations in the summer, and lower in the winter for example. 
+
+
 
 
 
