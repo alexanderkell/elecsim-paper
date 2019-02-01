@@ -1,5 +1,5 @@
 
-ElecSIM has been designed for ease of use to enable non-experts to rapidly test different policies and the outcome of various scenarios such as demand growth. The user is able to input exogenous variables such as fuel cost, carbon taxes, power plants, power plant costs, electricity demand and availability factors. This allows for the initialisation of different countries and scenarios to be tested.
+ElecSIM has been designed for ease of use to enable non-experts to rapidly test different policies, and the outcomes of various scenarios such as demand growth or fuel prices. The user is able to input exogenous variables such as fuel costs, carbon taxes, power plants, power plant costs, electricity demand and availability factors. This allows for the initialisation of different countries and scenarios to be tested.
 
 
 \subsection{High-Level Overview}
@@ -14,17 +14,30 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 
 
 
-ElecSIM is made up of four fundamental parts: The agents, which are split up into demand and generation company (GenCo) agents. The world in which these agents exist. Power plants which are owned by the GenCo agents, and the Power Exchange which acts as a market to match GenCo owned power plants with electricity demand.
+ElecSIM is made up of four fundamental parts: The agents, which are split up into demand and generation company (GenCo) agents. The world in which these agents exist, and power plants which are owned by the GenCos. Finally, there exists a Power Exchange which acts as a market to match GenCo owned power plants with electricity demand.
 
-A schematic of ElecSIM is displayed in Figure \ref{fig:systemoverview} which shows these four fundamental parts, and how they interact.
+A schematic of ElecSIM is displayed in Figure \ref{fig:systemoverview} which displays these four fundamental sections, and demonstrates how they interact.
 
-\subsubsection{Data parametrisation} To parametrise the world two sources are used. A configuration file and data files. The data files store information such as historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. This is data that does not change from scenario to scenario for a country realisation, however does change between country and country.
+\subsubsection{Data parametrisation} To parametrise the world, two sources are used. A configuration file and a collection of data sources. The data sources contain information such as historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. This is data that does not change from scenario to scenario realisation, however can vary between countries.
 
-To ensure rapid changes between scenarios, the configuration file enables the user to rapidly change scenarios, and points to the various previously mentioned data sources. The configuration file enables the changing of demand growth and load duration curve, which is the shape of demand curve over a year period. Future fuel and carbon prices, capital costs, plant availability, investment costs and simulation time. These data is then used to calibrate the world. 
+The configuration file allows for rapid changes to test different hypothesis and scenarios. The configuration file points to the previously mentioned data sources. The configuration file enables the changing of demand growth and load duration curve, which is the shape of electricity demand over a year period. Future fuel and carbon prices, capital costs, plant availability, investment costs and simulation time. These data is used to calibrate the world, specifically generator companies and demand.
 
-The demand agent is a simplified representation of aggregated demand in a country. Each year it multiplies the percentage of change in demand with the load duration curve. This data is used by the Power Exchange to match supply with demand.
+\subsubsection{Demand Agent}
+The demand agent is a simplified representation of aggregated demand in a county. The demand is represented as a load duration curve. An example load duration curve is demonstrated in Figure \ref{fig:loaddurationcurve}. A load duration curve is an arrangement of all load levels in descending order of magnitude, where the lowest segment demand demonstrates baseload (ie. 100\% of time). Each year, the demand agent multiplies the percentage of change in demand with each segment of the load duration curve. Therefore, whilst total demand changes, the load duration curve is assumed not to change between years.
 
-\subsection{Generation Companies} The GenCos have two main functions. Investing in power plants and making bids to sell their electricity yearly for each of their power plants. We will first focus on the buying and selling of electricity using a Power Exchange, and then cover the investment algorithm for GenCos.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\linewidth]{figures/load_duration_curve}
+	\caption{Example load duration curve in a single year.}
+	\label{fig:loaddurationcurve}
+\end{figure}
+
+As per \cite{Chappin2017}, we modelled a load duration curve of the electricity demand for one year with 20 segments. 20 segments enabled us to capture the varying demand of electricity throughout the year to a high enough degree of accuracy, but also reduce computational complexity. 
+This data is used by the Power Exchange to match supply with demand.
+
+
+
+\subsubsection{Generation Company Agents} The GenCos have two main functions. Investing in power plants and making bids to sell their electricity each year for each of their power plants. We will first focus on the buying and selling of electricity using a Power Exchange, and then cover the investment algorithm for GenCos.
 
 \subsubsection{Electricity Market} \label{sssec:electricity_market} Figure \ref{fig:powermarket} displays the process for each segment of demand. The Power Exchange receives bids for every single power station in the modelled world from each of the GenCos. The final price paid to each of the GenCos is known as the spot price or the System Marginal Price (SMP). The spot price or SMP is the highest price that has been accepted to meet demand. This is paid to all generators regardless of their initial bid. For this reason, GenCos are motivated to bid their minimum profitable price to ensure that their bid is accepted. This minimum profitable price is known as the short run marginal cost (SRMC). The SRMC is the price that it costs a generator to sell a single unit of electricity. 
 
@@ -65,9 +78,15 @@ Once expected fuel prices, carbon price, discount rate, and expected sale price 
 
 \subsection{Power Plant Parameter Estimation}
 
+
+
 The estimation of power plant parameters is critical to electricity market models. Costs form an important element of markets and investment, and publicly available data for individual countries can be scarce. Thus, extrapolation and interpolation is required to estimate costs for power plants of differing sizes, types and years of construction.
 
-We enable users to initialise costs relevant to their particular country. They can provide highly detailed costs, with the parameters shown in Table \ref{table:parameter_notation}. Efficiency ($\eta$) is defined as the percentage of energy from a fossil fuel that is converted into electrical energy. Operating period ($OP$) is the total period in which a power plant is in operation. Pre-development period ($P_D$) includes the pre-licensing, technical and design costs, as well as costs incurred due to regulatory, licensing and public enquiry \cite{Ltd2016}. The construction period $C_D$ and construction costs $C_C$ are incurred during the development of the plant, excluding network connections. The infrastructure costs $I_C$ are the costs incurred by the developer in connecting the plant to the electricity or gas grid. 
+
+
+We enable users to initialise costs relevant to their particular country. They can provide highly detailed costs, with the parameters shown in Table \ref{table:parameter_notation}, or an average cost per MWh produced over the lifetime of a plant, also known as levelised cost of electricty (LCOE).
+
+The parameters in Table \ref{table:parameter_notation} are explained here: Efficiency ($\eta$) is defined as the percentage of energy from fuel that is converted into electrical energy. Operating period ($OP$) is the total period in which a power plant is in operation. Pre-development period ($P_D$) and pre-development costs ($P_C$) include the time and costs for pre-licensing, technical and design, as well as costs incurred due to regulatory, licensing and public enquiry. The construction period ($C_D$) and construction costs ($C_C$) are incurred during the development of the plant, excluding network connections. The infrastructure costs ($I_C$) are the costs incurred by the developer in connecting the plant to the electricity or gas grid. Fixed operation \& maintenance costs ($F_C$) are costs incurred in operating the plant that do not vary based on plant output, and variable operation \& maintenance costs are those that do depend on generator output \cite{Ltd2016}.
 
 
 
@@ -78,9 +97,14 @@ We enable users to initialise costs relevant to their particular country. They c
 	\label{table:parameter_notation}
 \end{table}
 
-Further information is required to fully parametrise power plants. Data such as availability and capacity factor is required to accurately model the ability of power plants to meet demand. Availability is the percentage of time that a power plant could possibly produce electricity over a given time period. Availability can be reduced by forced and planned outages. In addition to this, older plants have lower availability factors than newer plants, therefore both current and historical data is required. 
+Precise data is often available only for specifically sized plants. Estimating the individual costs of power plants between two known capacities is achieved through linear interpolation of each parameter. Where the plant to be estimated falls outside of the range of known data points the closest data point is used. For example, the parameters of a $1,500$MW combined cycle gas plant (CCGT) are the same as a $1,200$MW CCGT plant if the $1,200$MW plant was the largest available data point. 
 
-Capacity factor is the actual electrical energy produced over a given time period divided by the maximum possible electrical energy it could have produced. In contrast to availability, capacity factor can be impacted by regulatory constraints, market forces and resource availability. For solar and wind, capacity factors can change significantly with time. Higher capacity factors are common for solar installations in the summer, and lower in the winter for example. 
+If specific parameters are not known (those referred to in Table \ref{table:parameter_notation}), then the LCOE can be used to for estimation, provided that these parameters are available for a single instance of each type of power plant. This is achieved through linear optimisation, with constraints available for each of the parameters. These constraints can be set by the user, enabling, for example, varying operation and maintenance costs per country as a fraction of the levelised cost of electricity.
+
+
+In addition to cost parameters, the availability and capacity factors are required to fully parametrise power plants. Availability is the percentage of time that a power plant could possibly produce electricity over a given time period. Availability can be reduced by forced and planned outages. Historical data is also required, due to the fact that older plants have lower availability factors than newer plants.
+
+Capacity factor is the actual electrical energy produced over a given time period divided by the maximum possible electrical energy it could have produced. In contrast to availability, capacity factor can be impacted by regulatory constraints, market forces and resource availability. For solar and wind, capacity factors can change significantly with time. Higher capacity factors are common for solar installations in the summer, and lower in winter for example. 
 
 
 
@@ -88,7 +112,6 @@ Capacity factor is the actual electrical energy produced over a given time perio
 
 %GenCos  invest in power plants based on the highest positive net present value (NPV). Bids are made for each power plant based on the power plants short run marginal cost. A Power Exchange operator matches these bids with demand in merit order. 
 
-This is then repeated for each year of the simulation.
 
 
 %\begin{figure}[h]
