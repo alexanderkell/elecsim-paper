@@ -64,7 +64,7 @@ Equation \ref{eq:npv_eq} displays the calculation of NPV. Where $t$ is the year 
 NPV(i, N) = \sum_{t=0}^{N}\frac{R_t}{(1+t)^t}
 \end{equation}
 
-A discount rate set by a firm's weighted average cost of capital (WACC) is often used. Where WACC is the rate that a company is expected to pay on average for its stock and debt. However, it is often believed that a higher rate should be selected to adjust for differing risk profiles, opportunity cost and rate of return desired.
+A discount rate set by a firm's weighted average cost of capital (WACC) is often use \cite{KincheloeStephenC1990TWAC}. Where WACC is the rate that a company is expected to pay on average for its stock and debt. However, it is often believed that a higher rate should be selected to adjust for differing risk profiles, opportunity cost and rate of return desired.
 
 Data is available for average WACC for power plants, and can be set in the configuration file. However, to account for differing risk profiles, opportunity costs, rate of return desired, and WACC based on companies' relative credit risk, we have sampled difference in discount rates from the mean WACC with a Gaussian distribution with a standard deviation of $\pm3\%$. Which was chosen to give sufficient variance between GenCos whilst remaining close to the mean set by the user.
 
@@ -108,7 +108,7 @@ In addition to cost parameters, the availability and capacity factors are requir
 
 Capacity factor is the actual electrical energy produced over a given time period divided by the maximum possible electrical energy it could have produced. In contrast to availability, capacity factor can be impacted by regulatory constraints, market forces and resource availability. For solar and wind, capacity factors can change significantly with time. Higher capacity factors are common for solar installations in the summer, and lower in winter for example \cite{Stoft2002}. 
 
-To model the intermittency of wind and solar power we allow them to contribute only a certain percentage of their total capacity (nameplate capacity) for each load segment. This percentage is based upon empirical wind and solar capacity factors, relating demand to average capacity \cite{Pfenninger2016, Staffell2016, Chappin2017}. This is done as there is a correlation between demand and wind speed, as well as with solar irradiance. The requirement of storage to provide constant electricity from intermittent resources is an important issue. However, due to the fact that ElecSIM takes yearly time steps, we are unable to model short term variability in electricity demand. We also, do not model long-term storage due to its currently limited ability. 
+To model the intermittency of wind and solar power we allow them to contribute only a certain percentage of their total capacity (nameplate capacity) for each load segment. This percentage is based upon empirical wind and solar capacity factors, relating demand to average capacity. This is done as there is a correlation between demand and wind speed, as well as with solar irradiance. The requirement of storage to provide constant electricity from intermittent resources is an important issue. However, due to the fact that ElecSIM takes yearly time steps, we are unable to model short term variability in electricity demand. We also, do not model long-term storage due to its currently limited ability. 
 
 When initialised, the variable operation and maintenance costs are selected from a uniform distribution, with the ability for the user to set maximum percentage increase or decrease. A uniform distribution was chosen to capture the large deviations that can occur in variation of variable operation and maintenance, especially other a long time period. By doing this, the variance in costs between individual power plants for processes such as preventative and corrective maintenance, labour costs and skill, health and safety and chance are different per plant instant.  
 
@@ -155,19 +155,21 @@ The world also settles the accounts of the GenCos, by paying bids, and removing 
 
 Here we study a realisation of ElecSIM, which we calibrated to the United Kingdom.
 
-around a mean of 10\% for nuclear power plants \cite{Paper2012} and 5.9\% for all other generators \cite{KPMG2017}.
+\subsubsection{Exogenous Inputs}
 
+To model variance in gas and coal prices we used data from \cite{coalprices,gasprices}. Calibration of the load duration curve was taken from \cite{gbnationalgridstatus_2019}.
 
+Historical EU ETS carbon price was taken from \cite{jones_moore_macdonald_macdonald_buckley_macdonald_2019}. The EU ETS is the EU emissions trading scheme, which limits total carbon emissions within the EU area.
 
+\subsubsection{Power Plant Parameters}
 
+ElecSIM's power generation costs are initialised using the UK government Department for Business, Energy and Industrial Strategy (BEIS) power plant generation report \cite{Department2016}. This contains information on power plants found in Table \ref{table:parameter_notation}.
 
-\subsubsection{Data Initialisation}ElecSIM's power generation costs are initialised using the UK government Department for Business, Energy and Industrial Strategy (BEIS) power plant generation report \cite{Department2016}. This contains information on power plants found in Table \ref{table:parameter_notation}.
-
-For historical power plants, we used historical costs of Levelised Cost of Energy (LCOE) \cite{Dale2013}. Each parameter was scaled linearly from the modern LCOE calculated from the BEIS report, to attain the relevant historical LCOE. In this realisation we ensured that each of the parameters were scaled linearly to the modern power plant costs found in \cite{Department2016}. Historical plant efficiency was taken into account for gas and coal power plants using data from the USA \cite{EIA2013}.
-
-To model variance in gas and coal prices we used data from \cite{coalprices,gasprices}.
+For historical power plants, we used historical costs of Levelised Cost of Energy (LCOE) \cite{Dale2013}, from the International Energy Agency and International Renewable Energy Agency energy cost reports, localised to the UK \cite{IEA2015,IRENA2018}. In this realisation, each parameter was scaled linearly going from the modern LCOE calculated from the BEIS report, to attain the relevant historical LCOE. Historical plant efficiency was taken into account for gas and coal power plants using data from the USA \cite{EIA2013}.
 
 Outages are modelled by using availability data of gas, coal, photovoltaic, offshore and onshore power generators \cite{Ltd2016, Hunt2015, carroll-j}. Historical availabilities are modelled for older gas, coal and hydro power plants \cite{AlbertaSystemElectricOperator2016}.
+
+Capacity factors were taken as an average of the UK for solar and wind \cite{Pfenninger2016, Staffell2016}.
 
 
 
@@ -183,7 +185,7 @@ The lost load is set to be \textsterling6000 to encourage investment as per the 
 As agents are modelled to have imperfect information, we model that they make prediction on future electricity and \ce{CO2} prices, as well as demand change. Each generation company has a different look-back period sampled uniformly from the previous 3 to 7 years.
 
 
-The cost of equity and debt is modelled as a weighted average cost of capital (WACC), with values of 5.9\% for non-nuclear power plants, and 10\% for nuclear power plants \cite{KPMG2017, Paper2012}. The WACC is used as the discount rate for net present value calculations \cite{KincheloeStephenC1990TWAC}. 
+The cost of equity and debt is modelled as a weighted average cost of capital (WACC), with values of 5.9\% for non-nuclear power plants, and 10\% for nuclear power plants \cite{KPMG2017, Paper2012}. 
 
 
 
