@@ -1,9 +1,9 @@
 
-\subsection{Validation} Validation of models is important to ascertain that the results output are accurate. However, it should be noted that these long-term simulations are not predictions of the future, rather possible outcomes based upon certain assumptions. Therefore, the results from ElecSIM should be analysed by taking into account the underlying assumptions of the model, and comparing inputs to outcomes, as well as looking at general trends that emerge.
+\subsection{Validation} Validation of models is important to ascertain that the results output are accurate. However, it should be noted that these long-term simulations are not predictions of the future, rather possible outcomes based upon certain assumptions. Therefore, the results from ElecSIM should be analysed by taking into account the underlying assumptions of the model, and comparing inputs to outcomes, as well as looking at the general trends that emerge.
 
 Jager posits that a certain outcome or development path, captured by empirical data, might have developed in a completely different direction due to chance \cite{Jager2006a}. However, through observation, the processes that emerge from a model should be realistic and in keeping with expected behaviour \cite{Jager2006}.
 
-We begin by comparing the price duration curve in the year 2018. Figure \ref{fig:price_duration_curve} shows the N2EX Day Ahead Auction Prices of the UK \cite{nordpool_2019}, the stochastic simulated electricity prices, and the non-stochastic electricity price throughout the year 2018. The N2EX Day Ahead Market is a day ahead market run by Nord Pool AS. Nord Pool AS runs the largest market for electrical energy in Europe, measured in volume traded and in market share.
+We begin by comparing the price duration curve in the year 2018. Figure \ref{fig:price_duration_curve} shows the N2EX Day Ahead Auction Prices of the UK \cite{nordpool_2019}, the stochastic simulated electricity prices, and the non-stochastic electricity price throughout the year 2018. The N2EX Day Ahead Market is a day ahead market run by Nord Pool AS. Nord Pool AS runs the largest market for electrical energy in Europe, measured in volume traded and in market share \cite{nordpool_2019}.
 
 The variance of the simulated stochastic runs were achieved by calculating the runs 40 times. Outliers were removed as on a small number of occasions large jumps in prices at peak demand occurred which deviated significantly from the mean. This does occur in real life, however, at a smaller fraction of the time than 5\% of the year.
 
@@ -51,7 +51,7 @@ The total disk size of ElecSIM, with all accompanying data, and external reports
 	\label{fig:timingplot}
 \end{figure}
 
-Figure \ref{fig:timingplot} shows the running time for ElecSIM with installed capacity. We run the simulation with varying carbon taxes between 0, 20, 40 and 70\textsterling per tonne of \ce{CO2}. We varied demand between 2000MW and 320,000MW to see the effect of different sized countries on running time. The makeup of the electricity mix was achieve through stratified sampling of the UK electricity mix. 
+Figure \ref{fig:timingplot} shows the running time for ElecSIM with varying installed capacity. We run the simulation with varying carbon taxes between 0, 20, 40 and \textsterling70 per tonne of \ce{CO2}. We varied demand between 2000MW and 320,000MW to see the effect of different sized countries on running time. The makeup of the electricity mix was achieve through stratified sampling of the UK electricity mix. 
 
 The results show a generally linear time complexity with an increase in installed capacity leading to an increase in run time.
 
