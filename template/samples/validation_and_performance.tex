@@ -11,7 +11,7 @@ Figure \ref{fig:price_duration_curve} demonstrates very little variance in the n
 
 Table \ref{table:validation_metrics} shows performance metrics of the stochastic and non-stochastic runs versus the actual price duration curve . It can be seen that stochastic implementation (ElecSIM), improves the mean absolute error (MAE) by $52.5\%$.
 
-\begin{figure}[H]
+\begin{figure}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/load_price_duration_curve_comparison.pdf}
 		\caption{Price duration curve which compares real electricity prices to those paid in ElecSIM with and without stochasticity.}
@@ -19,7 +19,7 @@ Table \ref{table:validation_metrics} shows performance metrics of the stochastic
 	\end{center}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}
 	\centering
 	\csvautobooktabular{tables/validation/initialisation_run_validation.csv}
 	\caption{Validation performance metrics.}
