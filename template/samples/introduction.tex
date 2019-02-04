@@ -5,8 +5,9 @@ As shown by Figure \ref{fig:fuel_emissions_market_share}, the electricity mix is
 
 
 
-\begin{figure}[b]
+\begin{figure}
 	\begin{center}
+
 		\includegraphics[width=0.45\textwidth]{figures/elec_gen_carbon.png}
 		\caption{Global electricity generation sources and relative carbon emission intensity. Bars refer to percentage of global electricity mix, and dots refer to carbon emission intensity. ~\cite{BP2018,Hall1983}}
 		\label{fig:fuel_emissions_market_share}
@@ -20,14 +21,13 @@ Such a transition needs to be performed in a safe and non-disruptive manner -- i
 
 Due to the long construction times, long operating periods and high costs of power plants, investment decisions made today can have long term impacts on future electricity supply \cite{Chappin2017}. Governments, and society, therefore have a role in ensuring that the negative externalities of pollution and carbon emission are priced into electricity generation so that optimal decisions are made. Due to the absence of central control in electricity generation investment, other methods must be used to influence the independent players of the electricity market. Methods such as carbon taxes, policy and regulation can aid in the goals of reducing carbon emissions to limit global warming, as agreed in the Paris agreement \cite{May2002}.
 
-A common method to understand and reduce risk as well as reduce uncertainty, especially in electricity planning, is simulation and modelling. Simulation and modelling allows practitioners to realise a physical system in a virtual model. In this context, a model is defined as an approximation of a system through the use of mathematical formulas and algorithms. Through simulation it is possible to test a system where real life experimentation would not be practical due to reasons such as prohibitively high costs, time constraints or risk of detrimental impacts. This has the dual benefit of minimising the risk of real decisions in the physical system, as well as allowing practitioners to test less risk-averse strategies. Without simulation one would frequently make safer decisions to reduce risk.
+A common method to understanding and reducing risk as well as reducing uncertainty, especially in electricity planning, is simulation and modelling. Simulation and modelling allows practitioners to realise a physical system in a virtual model. In this context, a model is defined as an approximation of a system through the use of mathematical formulas and algorithms. Through simulation it is possible to test a system where real life experimentation would not be practical due to reasons such as prohibitively high costs, time constraints or risk of detrimental impacts. This has the dual benefit of minimising the risk of real decisions in the physical system, as well as allowing practitioners to test less risk-averse strategies. Without simulation one would frequently make safer decisions to reduce risk.
 
-Agent-based modelling (ABM) is a class of computational simulation models composed of autonomous, interacting agents. ABMs are a way of modelling the dynamics of a complex system \cite{MacAl2010}. Due to the numerous and diverse actors involved in the generation, distribution and sale of electricity in liberalised electricity markets, agent based models are well suited and increasingly being used in the literature \cite{Zhou2007}.
-
+Agent-based modelling (ABM) is a class of computational simulation models composed of autonomous, interacting agents. ABMs are a way of modelling the dynamics of a complex system \cite{MacAl2010}. Due to the numerous and diverse actors involved in the generation, distribution and sale of electricity in liberalised electricity markets, agent based models are increasingly being used \cite{Zhou2007}.
 
 In this paper, we present ElecSIM, an open-source agent-based model that simulates generation companies (GenCos) in an electricity market. ElecSIM models GenCos as multiple agents and electricity demand as a single aggregated agent (which can be expanded to include different types of demand such as industry, household and transport), with a power exchange that facilitates trades between the two. 
 
-GenCos actively make bids for each of the power plants they own to match demand. Their bids are based on their costs to supply a single unit (1MWh) of electricity, known as their short run marginal cost (SRMC), which excludes capital and fixed costs. The power exchange links bids to supply based on merit-order, with priority to the cheapest bids first. GenCos then invest in power plants based on expected profitability of each option.
+GenCos actively make bids for each of the power plants they own to match demand. Their bids are based on their costs to supply a single unit (1MWh) of electricity, known as their short run marginal cost (SRMC), which excludes capital and fixed costs. The power exchange links bids with priority to the cheapest bids first, also known as merit-order dispatch. GenCos then invest in power plants based on expected profitability of each option.
 
 
 Through simulation we can evaluate many strategies in order to identify those most likely to achieve our goals of rapid but non-disruptive migration from fossil to renewable.
