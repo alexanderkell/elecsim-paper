@@ -5,14 +5,14 @@ Live experimentation of physical processes is often not practical. The costs of 
 %	\begin{tabular}{|l|c|c|c|c|c|}
 	\begin{tabular}{lccccc} \toprule
 		\multicolumn{1}{c}{\textbf{Tool name}} & \textbf{Open Source} & \textbf{Long-Term Investment} & \textbf{Market} & \textbf{Stochastic Inputs} & \textbf{Country Generalisability} \\ \midrule
-		SEPIA                                    & \checkmark           & $\times$                             & \checkmark      & Demand                     & \checkmark                        \\ 
-		EMCAS                                    & $\times$                    & \checkmark                    & \checkmark      & Outages                    & \checkmark                        \\ 
-		NEMSIM                                   & ?              & \checkmark                    & \checkmark      & $\times$                          & $\times$                                 \\ 
-		AMES                                     & \checkmark           & $\times$                             & Day-ahead       & $\times$                          & $\times$                                 \\ 
-		PowerACE                                 & $\times$                    & \checkmark                    & \checkmark      & Outages/Demand             & \checkmark                        \\ 
-		MACSEM                                   & ?              & $\times$                             & \checkmark      & $\times$                          & \checkmark                        \\ 
-		GAPE$\times$                                    & ?              & $\times$                             & Day-ahead       & $\times$                          & \checkmark                        \\ 
-		EMLab                                    & \checkmark           & \checkmark                    & Futures         & $\times$                          & \checkmark                        \\ 
+		SEPIA \cite{Harp2000}  & \checkmark           & $\times$                             & \checkmark      & Demand                     & \checkmark                        \\ 
+		EMCAS ~\cite{Conzelmann}   & $\times$                    & \checkmark                    & \checkmark      & Outages                    & \checkmark                        \\ 
+		NEMSIM ~\cite{Batten2006}  & ?              & \checkmark                    & \checkmark      & $\times$                          & $\times$                                 \\ 
+		AMES  ~\cite{Sun2007} & \checkmark           & $\times$                             & Day-ahead       & $\times$                          & $\times$                                 \\ 
+		PowerACE ~\cite{Rothengatter2007} & $\times$                    & \checkmark                    & \checkmark      & Outages/Demand             & \checkmark                        \\ 
+		MACSEM  ~\cite{Praca2003}  & ?              & $\times$                             & \checkmark      & $\times$                          & \checkmark                        \\ 
+		GAPEX  ~\cite{Cincotti2013} & ?              & $\times$                             & Day-ahead       & $\times$                          & \checkmark                        \\ 
+		EMLab ~\cite{Chappin2017}  & \checkmark           & \checkmark                    & Futures         & $\times$                          & \checkmark                        \\ 
 		ElecSIM                                  & \checkmark           & \checkmark                    & Futures         & \checkmark                 & \checkmark                        \\ \hline
 	\end{tabular}
 	\caption{Features of electricity market agent based model tools.}
@@ -34,7 +34,7 @@ There are numerous different mechanisms/markets for GenCos to sell electricity. 
 
 These mechanisms can be divided further into day-ahead markets and futures markets. Where day-ahead markets are markets where a buyer assesses how much energy it will need to meet demand the next day, and how much it is willing to pay for this volume, hour by hour \cite{nordpool_20192}. The seller (GenCo), will decide how much electricity it can deliver and at what price, hour by hour. Futures markets is where electricity is traded as a commodity, where electricity is bought at a certain price, at either high or low demand at a point in the future.
 
-A number of simulation tools have emerged which model these electricity markets, for example SEPIA~\cite{Harp2000} EMCAS~\cite{Conzelmann}, NEMSIM~\cite{Batten2006}, AMES~\cite{Sun2007}, PowerACE~\cite{Rothengatter2007}, ~\cite{Praca2003}, GAPEX~\cite{Cincotti2013} and  EMLab~\cite{Chappin2017}. 
+A number of simulation tools have emerged which model these electricity markets, for example SEPIA~\cite{Harp2000} EMCAS~\cite{Conzelmann}, NEMSIM~\cite{Batten2006}, AMES~\cite{Sun2007}, PowerACE~\cite{Rothengatter2007}, MACSEM ~\cite{Praca2003}, GAPEX~\cite{Cincotti2013} and  EMLab~\cite{Chappin2017}. 
 
 However, by referring to Table \ref{table:tool_comparison}, it can be seen that none of these suit the needs of an open source, long-term market model. We demonstrate that in addition to requiring a long-term electricity market model to be open source, the inclusion of stochastic input variables in ElecSIM allows for better performance. 
 
