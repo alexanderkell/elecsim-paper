@@ -55,7 +55,7 @@ Higher segments of demand command higher prices, due to more expensive generator
 
 Investment in power plants is made based upon a net present value (NPV) calculation. NPV is a summation of the present value of a series of present and future cash flow. NPV provides a method for evaluating and comparing investments with cash flows spread over many years, making it suited to evaluating power plants which have a long lifetime. A positive NPV means that the projected investment exceeds the anticipated costs, and is therefore profitable. NPV is based upon the fact that current cash flow is worth more than future cash flow. This is due to the fact that money today can be invested and have a rate of return. This means that, for example \$50,000 today is worth more than \$50,000 in 10 years time. The value in which future cash flow is worth less than present cash flow is discounted by the discount rate.
 
-Equation \ref{eq:npv_eq} is the calculation of NPV. Where $t$ is the year of the cash flow, $i$ is the discount rate, $N$ is total number of periods, or lifetime of power plant, and $R_t$ is the net cash flow (cash inflow minus cash outflow) at time $t$.
+Equation \ref{eq:npv_eq} is the calculation of NPV, where $t$ is the year of the cash flow, $i$ is the discount rate, $N$ is total number of periods, or lifetime of power plant, and $R_t$ is the net cash flow (cash inflow minus cash outflow) at time $t$.
 
 \begin{equation} \label{eq:npv_eq}
 NPV(i, N) = \sum_{t=0}^{N}\frac{R_t}{(1+t)^t}
@@ -97,7 +97,7 @@ The parameters in Table \ref{table:parameter_notation} are detailed here: Effici
 \end{table}
 \addtolength{\textfloatsep}{-0.2in}
 
-Precise data is often available only for specific sized plants. Estimating the individual costs of power plants between two known capacities is achieved through linear interpolation of each parameter. When the plant to be estimated falls outside of the range of known data points, the closest data point is used. For example, the parameters of a $1,500$MW combined cycle gas plant (CCGT) are estimated to be the same as a $1,200$MW CCGT plant if the $1,200$MW plant was the largest available data point. 
+Precise data is often available only for specifically sized plants. Estimating the individual costs of power plants between two known capacities is achieved through linear interpolation of each parameter. When the plant to be estimated falls outside of the range of known data points, the closest data point is used. For example, the parameters of a 1,500MW combined cycle gas plant (CCGT) are estimated to be the same as a 1,200MW CCGT plant if the 1,200MW plant was the largest available data point. 
 
 If specific parameters are not known (those referred to in Table \ref{table:parameter_notation}), then the LCOE can be used for parameter estimation, provided that these parameters are available for a single instance of each type of power plant. This is achieved through linear optimisation, with constraints available for each of the parameters. These constraints can be set by the user, enabling, for example, varying operation and maintenance costs per country as a fraction of the levelised cost of electricity.
 
@@ -116,9 +116,9 @@ With historical power plants which have been refurbished, we sample their initia
 
 \subsubsection{ElecSIM World}
 
-Figure \ref{fig:lowlevelsystem} demonstrates the world and how it co-ordinates data and processes. It contains information on every single GenCo, Power Exchange, and runs processes. The world also contains information on the year number and collects simulation data.
+Figure \ref{fig:lowlevelsystem} demonstrates the World and how it co-ordinates data and processes. It contains information on every GenCo, Power Exchange, and runs processes. The world also contains information on the year number and collects simulation data.
 
-The world brings together power plant data on one side, and demand data on the other. The investment decisions are based upon future demand and power plant costs. The merit order bids are based upon the investment decisions made and power plant costs.
+The World brings together power plant data and demand data. The investment decisions are based on future demand and power plant costs. The merit order bids are based upon the investment decisions made and power plant costs.
 
 Exogenous variables include fuel and \ce{CO2} prices as well as demand growth. Once the data is initialised, the world calls on the Power Exchange to operate the yearly electricity spot market.
 
