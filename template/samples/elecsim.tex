@@ -16,7 +16,7 @@ ElecSIM has been designed for ease of use to enable non-experts to rapidly test 
 
 ElecSIM is made up of five fundamental parts: the agents, which are split up into demand and generation companies (GenCos); power plants, which are owned by the GenCos; a Power Exchange, which controls a spot market to match GenCo owned power plants with electricity demand; the world in which these agents and market exist; and the data for parametrisation.
 
-A schematic of ElecSIM is displayed in Figure \ref{fig:systemoverview} which displays these four fundamental sections and demonstrates how they interact. The main components are discussed below:
+A schematic of ElecSIM is displayed in Figure \ref{fig:systemoverview} which displays these five fundamental sections and demonstrates how they interact. The main components are discussed below:
 
 \subsubsection{Data parametrisation} To parametrise the world ElecSIM contains a configuration file and a collection of data sources. These data sources contain information such as historical fuel prices, historical plant availability, wind and solar capacity, power plant costs, historical costs, historical efficiency, company finances and historical carbon price. This is data that does not change from scenario to scenario, however can vary between countries.
 
@@ -180,7 +180,7 @@ The lost load is set to be \textsterling6000 to encourage investment as per the 
 
 \subsubsection{Investment}
 
-As agents are modelled to have imperfect information, we model that they make prediction on future electricity and \ce{CO2} prices, as well as demand change. Each generation company has a different look-back period sampled uniformly from the previous 3 to 7 years.
+As agents are modelled to have imperfect information, we model that they make predictions on future electricity and \ce{CO2} prices, as well as demand change. Each generation company has a different look-back period sampled uniformly from the previous 3 to 7 years.
 
 
 The cost of equity and debt is modelled as a weighted average cost of capital (WACC), with values of 5.9\% for non-nuclear power plants, and 10\% for nuclear power plants \cite{KPMG2017, Paper2012}. 
