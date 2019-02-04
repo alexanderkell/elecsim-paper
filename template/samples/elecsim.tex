@@ -1,5 +1,5 @@
 
-ElecSIM has been designed for ease of use to enable non-experts to rapidly test policies and observe the outcomes of various scenarios such as demand growth. The user is able to input exogenous variables such as fuel costs, carbon taxes, power plants, power plant costs and electricity demand. This allows for the initialisation of different countries and scenarios to be tested.
+ElecSIM has been designed for ease of use to enable non-experts to rapidly test policies and observe the outcomes of various scenarios such as demand growth. The user is able to input exogenous variables such as fuel costs, carbon taxes, number and type of power plants, power plant costs and electricity demand. This allows for the initialisation of different countries and scenarios to be tested.
 
 
 \subsection{Overview}
@@ -34,7 +34,7 @@ The demand agent is a simplified representation of aggregated demand in a partic
 	\label{fig:loaddurationcurve}
 \end{figure}
 
-As per \cite{Chappin2017}, we modelled the load duration curve of the electricity demand for one year with twenty segments. Twenty segments enabled us to capture the varying demand of electricity throughout the year to a high enough degree of accuracy, whilst also reducing computational complexity. 
+As per Chappin \textit{et al.} \cite{Chappin2017}, we modelled the load duration curve of the electricity demand for one year with twenty segments. Twenty segments enabled us to capture the varying demand of electricity throughout the year to a high enough degree of accuracy, whilst also reducing computational complexity. 
 
 
 \subsubsection{Generation Company Agents} The GenCos have two main functions. Investing in power plants and making bids to sell their electricity each year for every one of their power plants. We will first focus on the buying and selling of electricity using a Power Exchange, and then cover the investment algorithm used by GenCos.
@@ -57,7 +57,7 @@ Higher segments of demand command higher prices, due to more expensive generator
 
 Investment in power plants is made based upon a net present value (NPV) calculation. NPV is a summation of the present value of a series of present and future cash flow. NPV provides a method for evaluating and comparing investments with cash flows spread over many years, making it suited to evaluating power plants which have a long lifetime. A positive NPV means that the projected investment exceeds the anticipated costs, and is therefore profitable. NPV is based upon the fact that current cash flow is worth more than future cash flow. This is due to the fact that money today can be invested and have a rate of return. This means that, for example \$50,000 today is worth more than \$50,000 in 10 years time. The value in which future cash flow is worth less than present cash flow is discounted by the discount rate.
 
-Equation \ref{eq:npv_eq} displays the calculation of NPV. Where $t$ is the year of the cash flow. $i$ is the discount rate, $N$ is total number of periods, or lifetime of power plant, and $R_t$ is the net cash flow (cash inflow minus cash outflow) at time $t$.
+Equation \ref{eq:npv_eq} is the calculation of NPV. Where $t$ is the year of the cash flow, $i$ is the discount rate, $N$ is total number of periods, or lifetime of power plant, and $R_t$ is the net cash flow (cash inflow minus cash outflow) at time $t$.
 
 \begin{equation} \label{eq:npv_eq}
 NPV(i, N) = \sum_{t=0}^{N}\frac{R_t}{(1+t)^t}
@@ -73,7 +73,7 @@ As in the real world, GenCos have imperfect information, and therefore must fore
 
 Fuel price and carbon price are forecast using a linear regression. Demand, however, is first forecast using an exponential function, to take into account compounded growth. If a reasonable fit for historical demand data can not be found with optimisation, linear regression is used.
 
-These forecast data is then used to simulate a market $N$ years into the future using the same electricity market algorithm that is detailed in Section \ref{sssec:electricity_market}. We simulate a market based on the expected bids -- based on SRMC -- that every operating power plant will make. This includes the removal of plants that will be past their operating period, and the introduction of plants that are in construction or pre-development stages. 
+This forecast data is then used to simulate a market $N$ years into the future using the same electricity market algorithm that is detailed in Section \ref{sssec:electricity_market}. We simulate a market based on the expected bids -- based on SRMC -- that every operating power plant will make. This includes the removal of plants that will be past their operating period, and the introduction of plants that are in construction or pre-development stages. 
 
 However, there may be scenarios where demand is forecast to grow significantly, and limited investments have, at this point, been made to meet demand at $N$ years into the future. The expected price, would therefore be calculated to be that of lost load. Where lost load is defined as the price customers would be willing to pay to avoid disruption in their electricity supply, and is typically much higher than average prices. To avoid GenCos from predicting that large profits will be made, and under the assumption that further power plant investments will be made by other GenCos in the future, the lost load price is replaced with a predicted electricity price using a linear regression based on prices at lower points of the demand curve. If zero segments of demand are met (ie. total supply of generators is smaller than baseload), then the lost load price is used to encourage significant investment. If only a single segment of demand is met then the price of this demand segment is chosen. The lost load price can be configured in the configuration file.
 
@@ -83,9 +83,9 @@ Once expected fuel prices, carbon price, discount rate, and expected sale price 
 
 
 
-The estimation of power plant parameters is critical to electricity market models. Costs form an important element of markets and investment, and publicly available data for individual countries can be scarce. Thus, extrapolation and interpolation is required to estimate costs for power plants of differing sizes, types and years of construction.
+The estimation of power plant parameters is critical to electricity market models. Costs form an important element of markets and investment, and publicly available data for power plant costs for individual countries can be scarce. Thus, extrapolation and interpolation is required to estimate costs for power plants of differing sizes, types and years of construction.
 
-We enable users to initialise costs relevant to their particular country. They can provide highly detailed cost parameters, with the parameters shown in Table \ref{table:parameter_notation}, or an average cost per MWh produced over the lifetime of a plant, also known as levelised cost of electricty (LCOE).
+We enable users to initialise costs relevant to their particular country. They can provide highly detailed cost parameters, with the parameters shown in Table \ref{table:parameter_notation}, or an average cost per MWh produced over the lifetime of a plant, also known as levelised cost of electricity (LCOE).
 
 The parameters in Table \ref{table:parameter_notation} are detailed here: Efficiency ($\eta$) is defined as the percentage of energy from fuel that is converted into electrical energy. Operating period ($OP$) is the total period in which a power plant is in operation. Pre-development period ($P_D$) and pre-development costs ($P_C$) include the time and costs for pre-licensing, technical and design, as well as costs incurred due to regulatory, licensing and public enquiry. The construction period ($C_D$) and construction costs ($C_C$) are incurred during the development of the plant, excluding network connections. The infrastructure costs ($I_C$) are the costs incurred by the developer in connecting the plant to the electricity or gas grid. Fixed operation \& maintenance costs ($F_C$) are costs incurred in operating the plant that do not vary based on plant output. Variable operation \& maintenance ($V_C$) costs are costs incurred in operating the plant that do depend on generator output \cite{Ltd2016}.
 
@@ -94,7 +94,7 @@ The parameters in Table \ref{table:parameter_notation} are detailed here: Effici
 \begin{table}[h]
 	\centering
 	\csvautobooktabular{tables/notation_formated.csv}
-	\caption{Parameter notation.}
+	\caption{Parameter notation. (Whilst the unit of currency displayed is \textsterling, this can easily be changed to suit specific needs eg. \$, \texteuro)}
 	\label{table:parameter_notation}
 \end{table}
 
@@ -115,15 +115,15 @@ Whilst fuel price is controlled by the user, there is inherent volatility in fue
 
 With historical power plants which have been refurbished, we sample their initialisation randomly between 15 years prior to initialisation year and the initialisation year. This is done because there is rarely a comprehensive data set on when plants are refurbished. 15 years was chosen due to the fact that plants often have an operating period of 25 years, and therefore 15 years allowed for sufficient variance in results, whilst keeping plants in operation.
 
-\subsubsection{World}
+\subsubsection{ElecSIM World}
 
 Figure \ref{fig:lowlevelsystem} demonstrates the world and how it co-ordinates data and processes. It contains information on every single GenCo, Power Exchange, and runs processes. The world also contains information on the year number and collects simulation data.
 
 The world brings together power plant data on one side, and demand data on the other. The investment decisions are based upon future demand and power plant costs. The merit order bids are based upon the investment decisions made and power plant costs.
 
-Exogenous variables include fuel and \ce{CO2} prices as well as demand growth. Once the data is initialised the world calls on the Power Exchange to operate the yearly electricity spot market.
+Exogenous variables include fuel and \ce{CO2} prices as well as demand growth. Once the data is initialised, the world calls on the Power Exchange to operate the yearly electricity spot market.
 
-The world dismantles old plants once they have reached the end of their lifetime. Power plants are taken out of service if they have not sold any electricity in the past 7 years, which is configurable in the configuration file. We decided upon this due to the fact that power generators have high, sunk capital costs, which often have high demolition costs. We assume, therefore, that generator companies are willing to wait circa $\frac{1}{4}$ of their lives to see if a pay-out occurs due to the breakdown of competing power plants, increasing demand, or governmental support in the form of a carbon tax increase or reduction.
+%The world contains the functionality to dismantle old plants once they have reached the end of their lifetime. Power plants are taken out of service if they have not sold any electricity in the past 7 years, which is configurable in the configuration file. We decided upon this due to the fact that power generators have high, sunk capital costs, which often have high demolition costs. We assume, therefore, that generator companies are willing to wait circa $\frac{1}{4}$ of their lives to see if a pay-out occurs due to the breakdown of competing power plants, increasing demand, or governmental support in the form of a carbon tax increase or reduction.
 
 The world also settles the accounts of the GenCos, by paying bids, and removing operating and capital costs as well as loan and dividend payments.
 
