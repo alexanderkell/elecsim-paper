@@ -1,0 +1,532 @@
+PWD /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples
+INPUT /usr/local/texlive/2016/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.tex
+OUTPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.log
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/acmart.cls
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/acmart.cls
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/keyval.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/refcount.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/refcount.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/totpages/totpages.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/totpages/totpages.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/textcase/textcase.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/textcase/textcase.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ncctools/manyfoot.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ncctools/manyfoot.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ncctools/nccfoots.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ncctools/nccfoots.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cmap/cmap.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cmap/cmap.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/libertine.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/zi4.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/newtxmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cmap/t1.cmap
+OUTPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.pdf
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cmap/t1.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/libertine.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/libertine.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mweights/mweights.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mweights/mweights.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/LinLibertine_I.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/LinLibertine_I.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/zi4.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/zi4.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/newtxmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/newtxmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/kastrup/binhex.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/kastrup/binhex.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/comment/comment.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/comment/comment.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mhchem/mhchem.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mhchem/mhchem.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mwe/mwe.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mwe/mwe.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/blindtext/blindtext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/blindtext/blindtext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/blindtext/blindtext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translator.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translator.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translator.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/preprint/balance.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/preprint/balance.sty
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.aux
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.aux
+OUTPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.aux
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omlnxlmi.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omlnxlmi.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omsntxsy.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omsntxsy.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cmap/ot1.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cmap/ot1.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmi7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mmap/oml.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mmap/oml.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmi5.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsy7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mmap/oms.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/mmap/oms.cmap
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsy5.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+OUTPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsy.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/abstract.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/abstract.tex
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmi7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmi5.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsy7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsy5.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/introduction.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/introduction.tex
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/nxlmi.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rfxlri-alt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/LibertineTheta-Regular.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/zxlr-8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/zxlri-8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rntxmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/txfonts/txmi.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/literature_review.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/literature_review.tex
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/elecsim.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/elecsim.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/System_overview.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/System_overview.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/System_overview.pdf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTI-tlf-t1.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_duration_curve.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_duration_curve.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_duration_curve.png
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinBiolinumTI-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTI-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/tables/notation_formated.csv
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ts1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/nxlmi7.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/fxlri-7alt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/LibertineTheta-Regular.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rtxmi7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/zxlr-7nums.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/fxlri-7letters.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rntxmi7.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/nxlmia.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rfxlr-alt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/Libertine-nu.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexb.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rtxmio.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyralt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/boondox/zxxrl7z.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txex.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexmods.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexb.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/nxlmia.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rfxlr-alt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/Libertine-nu.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rfxlri-alt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/zxlri-8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexb.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/rtxmio.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxsyralt.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/zxlr-8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/boondox/zxxrl7z.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-ts1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ts1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/validation_and_performance.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/validation_and_performance.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_price_duration_curve_comparison.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_price_duration_curve_comparison.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_price_duration_curve_comparison.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/tables/validation/initialisation_run_validation.csv
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/timing_plot.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/timing_plot.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/timing_plot.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/scenario_testing.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/scenario_testing.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon70-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon70-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon70-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon10-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon10-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon10-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon20-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon20-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon20-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon18-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon18-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon18-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon40-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon40-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/scenarios/demand099-carbon40-datetime.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/conclusion.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/conclusion.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/appendix.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/appendix.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.aux
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_7f4ce4.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsy.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/zxlr.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/zxlri.pfb
