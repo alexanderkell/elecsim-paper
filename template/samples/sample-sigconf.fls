@@ -277,6 +277,12 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
 OUTPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/sample-sigconf.out
 INPUT /usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -358,6 +364,9 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/introduction.tex
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/introduction.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/elec_gen_carbon.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/elec_gen_carbon.png
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/elec_gen_carbon.png
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -393,6 +402,9 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/main_electricty_players.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/main_electricty_players.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/main_electricty_players.pdf
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/literature_review.tex
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/literature_review.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
@@ -409,15 +421,13 @@ INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/fi
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_duration_curve.png
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_duration_curve.png
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinBiolinumTI-tlf-t1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTI-tlf-t1--base.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/power_market.jpg
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/tables/notation_formated.csv
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ts1.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/newtx/nxlmi7.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/fxlri-7alt.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/newtx/LibertineTheta-Regular.tfm
@@ -465,17 +475,19 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/tables/notation_formated.csv
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ts1.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-ts1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-ts1--base.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/low_level_system.pdf
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/validation_and_performance.tex
+INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/validation_and_performance.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/validation_and_performance.tex
-INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/validation_and_performance.tex
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_price_duration_curve_comparison.pdf
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_price_duration_curve_comparison.pdf
 INPUT /Users/b1017579/Documents/PhD/Reports/6. ELECSIM/Paper/template/samples/figures/load_price_duration_curve_comparison.pdf
