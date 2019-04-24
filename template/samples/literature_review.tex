@@ -1,26 +1,6 @@
 Live experimentation of physical processes is often not practical. The costs of real life experimentation can be prohibitively high, and it normally requires significant time in order to fully ascertain the long-term trends. There is also a risk that changes can have detrimental impacts, and therefore often leads to only minor tweaks being made ~\cite{Forshaw2016}. These factors are particularly true for an electricity market, where decisions made can have long term impacts on energy mix, carbon emissions and investment decisions, with energy plants often having a lifetime of 25 years.  A solution to this is simulation, which can be used for rapid testing and prototyping of ideas. Simulation is the substitution of a physical process with a computer model. The computer model is parametrised by real world data and phenomena. The user is then able to experiment using this model, and assess the likelihoods of outcomes under certain scenarios and input variables \cite{Law:603360}.
 
 
-\begin{table*}[]
-%	\begin{tabular}{|l|c|c|c|c|c|}
-	\begin{tabular}{lccccc} \toprule
-		\multicolumn{1}{c}{\textbf{Tool name}} & \textbf{Open Source} & \textbf{Long-Term Investment} & \textbf{Market} & \textbf{Stochastic Inputs} & \textbf{Country Generalisability} \\ \midrule
-		SEPIA \cite{Harp2000}  & \checkmark           & $\times$                             & \checkmark      & Demand                     & \checkmark                        \\ 
-		EMCAS ~\cite{Conzelmann}   & $\times$                    & \checkmark                    & \checkmark      & Outages                    & \checkmark                        \\ 
-		NEMSIM ~\cite{Batten2006}  & ?              & \checkmark                    & \checkmark      & $\times$                          & $\times$                                 \\ 
-		AMES  ~\cite{Sun2007} & \checkmark           & $\times$                             & Day-ahead       & $\times$                          & $\times$                                 \\ 
-		PowerACE ~\cite{Rothengatter2007} & $\times$                    & \checkmark                    & \checkmark      & Outages/Demand             & \checkmark                        \\ 
-		MACSEM  ~\cite{Praca2003}  & ?              & $\times$                             & \checkmark      & $\times$                          & \checkmark                        \\ 
-		GAPEX  ~\cite{Cincotti2013} & ?              & $\times$                             & Day-ahead       & $\times$                          & \checkmark                        \\ 
-		EMLab ~\cite{Chappin2017}  & \checkmark           & \checkmark                    & Futures         & $\times$                          & \checkmark                        \\ 
-		ElecSIM                                  & \checkmark           & \checkmark                    & Futures         & \checkmark                 & \checkmark                        \\ \hline
-	\end{tabular}
-	\caption{Features of electricity market agent based model tools.}
-	\label{table:tool_comparison}
-\end{table*}
-
-
-{\color{red}Electricity energy policy modelling is an example where simulation can be used. Real-life experimentation of energy policy is not always feasible due to the long times required to observe results and high risks associated with setting a sub-optimal policy which could radically alter business models and lead to blackouts in electricity supply. Decisions can have long-term impacts, such as producing an electricity market with many expensive and highly polluting coal power plants, they may have ramp-up times, which is the time it takes for a generator to increase electricity production, that are not suitable to accommodate the intermittent electrical flow of renewables. Intermittent electrical flow is where sources of electricity exhibit uncontrolled increases or decreases in output, which is often the case for renewables such as wind, solar, wave and tidal \cite{Challenges2016}. A number of different simulations and computer models have been used to aid policy makers and energy market developers in coming to informed conclusions:}
 
 Energy models can typically be classified as top-down macro-economic models or bottom-up techno-economic models~\cite{Bohringer1998}. Top-down models typically focus on behavioural realism with a focus on macro-economic metrics. They are useful for studying economy-wide responses to policies ~\cite{Hall2016}, for example MARKAL-MACRO \cite{Fishbone1981} and LEAP \cite{Heaps2016}. Bottom-up models represent the energy sector in detail, and are written as mathematical programming problems~\cite{Gargiulo2013}. They detail technology explicitly, and can include cost and emissions implications~\cite{Hall2016}.
 
@@ -28,11 +8,6 @@ It is possible to further categorise bottom-up models into optimisation and simu
 
 However, electricity market liberalisation in many western democracies has changed the framework conditions. Centralised, monopolistic, decision making entities have given way to multiple heterogeneous agents acting in their own best interest~\cite{Most2010}. Therefore, certain policy options which encourage changes must be used by a central planner to attain a desired outcome, for example carbon taxes or subsidies. It is proposed that these complex agents are modelled using agent-based simulation, which allows for the modelling of heterogeneous actors.
 
-{\color{red}Agent-based simulation for electricity markets has received increasing attention in recent years. }
-
-{\color{red}There are numerous different mechanisms/markets for GenCos to sell electricity. These mechanisms can largely be split into pool markets and bilateral contracts. A pool market is a market in which bids and offers use supply and demand principles to set the price. Pool markets operators typically provide the function of matching buyers and sellers. Bilateral contracts are typically longer term markets where a GenCo will sell electricity to a demand company based on long-term contracts. }
-
-{\color{red} These mechanisms can be divided further into day-ahead markets and futures markets. Where day-ahead markets are markets where a buyer assesses how much energy it will need to meet demand the next day, and how much it is willing to pay for this volume, hour by hour \cite{nordpool_20192}. The seller (GenCo), will decide how much electricity it can deliver and at what price, hour by hour. Futures markets is where electricity is traded as a commodity, where electricity is bought at a certain price, at either high or low demand at a point in the future.}
 
 A number of simulation tools have emerged which model these electricity markets, for example SEPIA~\cite{Harp2000} EMCAS~\cite{Conzelmann}, NEMSIM~\cite{Batten2006}, AMES~\cite{Sun2007}, PowerACE~\cite{Rothengatter2007}, MACSEM ~\cite{Praca2003}, GAPEX~\cite{Cincotti2013} and  EMLab~\cite{Chappin2017}. By referring to Table \ref{table:tool_comparison}, it can be seen that none of these suit the needs of an open source, long-term market model. We demonstrate that in addition to requiring a long-term electricity market model to be open source, the inclusion of stochastic input variables in ElecSIM allows for better performance. 
 

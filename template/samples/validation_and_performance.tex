@@ -44,13 +44,6 @@ We found that the net present value (NPV) calculations are realistic, with onsho
 The total disk size of ElecSIM is 199MB. The amount taken up by data and reports is 175MB, whilst the source code takes up 19.6MB. The memory used for a run 10 years into the future has a median of 57.1MB.
 
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{figures/timing_plot}
-	\caption{Run times of different sized countries.}
-	\label{fig:timingplot}
-\end{figure}
-
 Figure \ref{fig:timingplot} shows the running time for ElecSIM with varying installed capacity. We run the simulation with varying carbon taxes between 0, 20, 40 and \textsterling70 per tonne of \ce{CO2}. We varied demand between 2000MW and 320,000MW to see the effect of different sized countries on running time. The makeup of the electricity mix was achieve through stratified sampling of the UK electricity mix. 
 
 The results show a generally linear time complexity with an increase in installed capacity leading to an increase in run time.

@@ -25,12 +25,6 @@ The configuration file allows for rapid changes to test different hypothesis and
 \subsubsection{Demand Agent}
 The demand agent is a simplified representation of aggregated demand in a particular country. The demand is represented as a load duration curve. {\color{red}An example load duration curve for a year is demonstrated in Figure \ref{fig:loaddurationcurve}}. A load duration curve is an arrangement of all load levels in descending order of magnitude, where the lowest segment demand demonstrates baseload (ie. 100\% of time), and the highest segment represents peak demand. Each year, the demand agent multiplies the percentage of change in demand with each segment of the load duration curve. Therefore, whilst total demand changes between years, the ratio between each segment of the load duration curve is assumed not to change.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.95\linewidth]{figures/load_duration_curve}
-	\caption{{\color{red}Example load duration curve in a single year.}}
- 	\label{fig:loaddurationcurve}
-\end{figure}
 
 As per Chappin \textit{et al.} \cite{Chappin2017}, we modelled the load duration curve of the electricity demand for one year with twenty segments. Twenty segments enabled us to capture the varying demand of electricity throughout the year to a high enough degree of accuracy, whilst also reducing computational complexity. 
 
@@ -43,13 +37,6 @@ The power exchange sorts bids in order of price {\color{red}, as is shown in Fig
 
 {\color{red}Higher segments of demand command higher prices, due to more expensive generators being selected to meet demand. This leads to a price duration curve.
 } 
-
-\begin{figure}
- 	\centering
- 	\includegraphics[width=1\linewidth]{figures/power_market}
- 	\caption{{\color{red}Power exchange clearing \cite{nuclear_economics_consulting_group_2019}.}}
- 	\label{fig:powermarket}
-\end{figure}
 
 \subsubsection{Investment}
 
@@ -126,12 +113,6 @@ Exogenous variables include fuel and \ce{CO2} prices as well as demand growth. O
 
 The world also settles the accounts of the GenCos, by paying bids, and removing operating and capital costs as well as loan and dividend payments.
 
-\begin{figure*}
-	\centering
-	\includegraphics[width=0.97\linewidth]{figures/low_level_system}
-	\caption{ElecSIM simulation overview}
-	\label{fig:lowlevelsystem}
-\end{figure*}
 
 
 %GenCos  invest in power plants based on the highest positive net present value (NPV). Bids are made for each power plant based on the power plants short run marginal cost. A Power Exchange operator matches these bids with demand in merit order. 
