@@ -1,60 +1,14 @@
 
-This section describes scenario runs using ElecSIM. Here, we vary the carbon tax and either grow or reduce total electricity demand. This was done to observe the effects of carbon tax policy on long-term investment.
+We experimented with the following levels of carbon tax: \textsterling10, \textsterling20 and \textsterling70 with demand decreasing 1\% per year. We chose this due to the increasing efficiency of homes, industy and technology, and due to the recent trend in the UK. We run each scenario 8 times each to capture the stochastic nature of the process. Via the observation of the emergent investment behaviour until 2050, an understanding of how real life investors may behave emerges.
 
-ElecSIM was built using python, this enabled us to lower barriers to entry and allow for users to integrate state-of-the-art machine learning and statistical packages in future work. We used project mesa as an open source agent based modelling framework for its ease of use \cite{Masad2015}.
 
-{\color{blue}
-We assume that carbon tax is set by the government, and not subject to market forces such as the EU Emissions Trading Scheme \cite{Council2016}.
-
-We run 16 different scenarios 8 times each, with demand increasing and decreasing by 1\% per year and  varying carbon prices. In this section we explore a decreasing demand of 1\% a year. We chose this due to the increasing efficiency of homes, industry and technology, and due to the recent trend in the UK. Demand, however, did not display a large effect on the optimum carbon price. We select a burn-in period of 6 years, due to the fact that the majority of power plants take 6 years to go from investment to operation.
-
-Table \ref{table:scenario_statistics}, in the appendix, displays the summary statistics of each run.
-
-It can be seen from Figure \ref{fig:demand99carbon10} that a carbon tax of \textsterling10 per year does little to influence investment in low-carbon, renewable technology. With traditional, fossil fuel based generation, providing the majority of supply in each year. However, there is an increase in renewable technology over the years, starting from mean 15.85\% market share in the year range 2019-2029, to 24.38\% in the year range 2039-2050. A similar increase of renewable energy with a carbon tax of \textsterling0 can be seen, albeit at a lower mean by the year range 2039-2050 (22.29\%).
-}
-
-The UK Government BEIS have predicted a carbon tax increasing from \textsterling18 to \textsterling200 by 2050. With carbon price increasingly linearly from 2030 to 2050. We have approximated these assumptions in Figure \ref{fig:demand99carbon18} and modelled the results. Interestingly, the results show only a slight increase in low-carbon supply over the \textsterling20 carbon tax energy mix. This demonstrates the importance of long-term modelling, and understanding the long-term impacts that can result due to today's decisions.
-
-It is hypothesised that a lower carbon tax early on changes the market dynamics for years to come, due to certain price structures, and therefore it takes a long time for renewable energy to recover.
-
-Figure \ref{fig:demand99carbon40} shows that a carbon tax of \textsterling40 is sufficient in beginning to move towards a low-carbon economy, with backup fossil fuel generators.
-
-However, by referring to Figure \ref{fig:demand99carbon70} it can be seen that to have 100\% renewable, a carbon price of \textsterling70 is required. 
-
-These results show the importance of making difficult decisions as soon as possible to have the biggest effect on the energy mix for years to come.
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/scenarios/demand099-carbon70-datetime.png}
-		\caption{{\color{blue}Demand decreasing by 1\% per year with a carbon tax of \textsterling70.}}
-		\label{fig:demand99carbon70}
-	\end{center}
-\end{figure}
+Figure \ref{fig:demand99carbon10} shows that with a carbon tax of \textsterling10, whilst renewable technology does grow, gas power plants provides the majority of supply in each year. However, at a level of \textsterling20 the increase in wind turbines is enough to match gas turbines. Whilst, a carbon tax of \textsterling70 shows a near 100\% uptake of wind turbines.
 
 
 
-\begin{figure*}[h]
-	\centering
-	\begin{subfigure}[b]{0.475\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{figures/scenarios/demand099-carbon10-datetime.png}
-		\caption[Network2]%
-		{{{\color{blue}{\small \textsterling10 carbon tax.}}}}
-		\label{fig:demand99carbon10}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.475\textwidth}  
-		\centering 
-		\includegraphics[width=\textwidth]{figures/scenarios/demand099-carbon20-datetime.png}
-		\caption[]%
-		{{{\color{blue}\textsterling20 carbon tax.}}}
-		\label{fig:demand99carbon20}
-	\end{subfigure}
-	\vskip\baselineskip
 
-	\quad
-	
-\end{figure*}
+
+
 %\FloatBarrier
 
 

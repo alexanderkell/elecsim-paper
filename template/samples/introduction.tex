@@ -1,48 +1,12 @@
 
-Policy is an important tool in the transition to a low-carbon economy to prevent the worst effects of climate change. Options include a tax on all carbon emissions or subsidies on low-carbon technologies. 
-
-The electricity market in many western democracies consists of multiple heterogenous actors acting for their own best interest \cite{Most2010}. Agent-based modelling is a simulation tool which enables the modelling of these actors. 
-
-Simulation is a technique to create a physical system in a virtual model \cite{Forshaw2016}. 
+Governmental policy is a tool that can be used to aid the transition to a low-carbon economy to prevent the worst effects of climate change. Options include a tax on all carbon emissions or subsidies in low-carbon technologies. In this paper, we propose the varying of carbon taxes to assess the long-term impacts on investment in the electricity market using an agent-based model simulation. 
 
 
+Simulation is a technique to create a physical system in a virtual model.  In this context a model is defined as a set of mathematical formulas and algorithms which are designed to mimic real life \cite{Forshaw2016}. Simulation allows practitioners to rapidly prototype high risk ideas in this virtual model and assess their outcome before implementation in the real world.
 
+The electricity market in many western democracies consists of multiple heterogenous actors acting for their own best interest \cite{Most2010}. Agent-based modelling is a technique which allows for the simulation of these heterogenous actors with different risk profiles, profit requirements and preferences. A number of agent-based models have been used to model the impact of carbon tax on long term investments \cite{Tang2015, Chen2014, Chappin2017}. ABMs have been utilised in this field to address phenomena such as market power \cite{Ringler2016a}.
 
-
-
- Simulation and modelling allows practitioners to realise a physical system in a virtual model. In this context, a model is defined as an approximation of a system through the use of mathematical formulas and algorithms. Through simulation it is possible to test a system where real life experimentation would not be practical due to reasons such as prohibitively high costs, time constraints or risk of detrimental impacts. This has the dual bene- fit of minimising the risk of real decisions in the physical system, as well as allowing practitioners to test less risk-averse strategies. Without simulation one would frequently make safer decisions to reduce risk.
-
-
-
-
-
-Centralised, monop- olistic, decision making entities have given way to multiple hetero- geneous agents acting in their own best interest
-
-
-
-
-
-The world faces significant challenges from climate change and global warming \cite{Masson-Delmotte2018}. A rise in carbon emissions increases the risk of severe impacts on the world such as rising sea levels, species extinction, heat waves and tropical cyclones \cite{IPCC2014}. The scientific literature concurs that the recent change in climate is anthropogenic, with 97\% of peer reviewed articles of this view \cite{Cook2013}.  
-
- 
-Due to the long construction times, long operating periods and high costs of power plants, investment decisions made today can have long term impacts on future electricity supply \cite{Chappin2017}. Governments, and society, therefore have a role in ensuring that the negative externalities of pollution and carbon emission are priced into electricity generation so that optimal decisions are made. Due to the absence of central control in electricity generation investment, other methods must be used to influence the independent players of the electricity market. Methods such as carbon taxes, policy and regulation can aid in the goals of reducing carbon emissions to limit global warming, as agreed in the Paris agreement \cite{May2002}.
-
-A common method to understanding and reducing risk as well as reducing uncertainty, especially in electricity planning, is simulation and modelling. Simulation and modelling allows practitioners to realise a physical system in a virtual model. In this context, a model is defined as an approximation of a system through the use of mathematical formulas and algorithms. Through simulation it is possible to test a system where real life experimentation would not be practical due to reasons such as prohibitively high costs, time constraints or risk of detrimental impacts. This has the dual benefit of minimising the risk of real decisions in the physical system, as well as allowing practitioners to test less risk-averse strategies. Without simulation one would frequently make safer decisions to reduce risk.
-
-Agent-based modelling (ABM) is a class of computational simulation models composed of autonomous, interacting agents. ABMs are a way of modelling the dynamics of a complex system \cite{MacAl2010}. Due to the numerous and diverse actors involved in the generation, distribution and sale of electricity in liberalised electricity markets, agent based models are increasingly being used \cite{Zhou2007}.
-
-In this paper, we present ElecSIM, an open-source agent-based model that simulates generation companies (GenCos) in an electricity market. ElecSIM models GenCos as multiple agents and electricity demand as a single aggregated agent (which can be expanded to include different types of demand such as industry, household and transport), with a power exchange that facilitates trades between the two. 
-
-GenCos actively make bids for each of the power plants they own to match demand. Their bids are based {\color{red}on their costs to supply a single unit (1MWh) of electricity, known as} their short run marginal cost (SRMC), which excludes capital and fixed costs. The power exchange links bids with priority to the {\color{red}cheapest bids first, also known} as merit-order dispatch. GenCos then invest in power plants based on expected profitability of each prospective power plant.
-
-Through simulation we can evaluate many strategies in order to identify those most likely to achieve our goals of rapid but non-disruptive migration from fossil to renewable.
-
-
-
-ElecSIM can be used by policy experts to test policy outcomes under different scenarios and provide quantitative advice to policy makers. They are able to modify a simple script to realise a scenario of their choose. It can also be used by energy market developers who can add things such as new energy sources policy types and storage types, allowing ElecSIM to adapt to a changing ecosystem.
-
-
-
+We model the realisation of the wholesale electricity market in the United Kingdom and adjust carbon tax in our agent-based model to see the effect of long-term investment. We posit that decisions made today can have complex long-term consequences, the process of which can be observed through simulation.
 
 
 

@@ -13,6 +13,7 @@
 \usepackage{amsfonts}
 \usepackage{booktabs}
 \usepackage{siunitx}
+\settopmatter{printacmref=false}
 %
 % defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -136,17 +137,21 @@
 \section{Introduction}
 \input{introduction}
 
-\section{Literature Review}\label{Literature Review}
-\input{literature_review.tex}
-\section{ElecSIM Architecture} \label{Model}
+
+
+
+\section{Model Architecture} \label{Model}
+
+
+
 \input{elecsim}
 
 
-\section{Validation and Performance}\label{Valdiation and Performance}
-\input{validation_and_performance}
+%\section{Validation and Performance}\label{Valdiation and Performance}
+%\input{validation_and_performance}
 
 
-\section{Scenario Testing}\label{Scenario Testing}
+\section{Results}\label{Scenario Testing}
 \input{scenario_testing}
 
 
@@ -175,11 +180,11 @@ This work was supported by the Engineering and Physical Sciences Research Counci
 
 % 
 % If your work has an appendix, this is the place to put it.
-\appendix
-
-
-\section{Research Methods}
-\input{appendix}
+%\appendix
+%
+%
+%\section{Research Methods}
+%\input{appendix}
 
 
 \end{document}
