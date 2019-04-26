@@ -1,10 +1,12 @@
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.97\linewidth]{figures/System_overview}
+	\includegraphics[width=0.97\linewidth]{figures/System_overview_large}
 	\caption{System overview of agent-based market model.}
 	\label{fig:systemoverview}
+\vskip -6mm
 \end{figure}
+
 
 \begin{figure*}[h]
 	\centering
@@ -28,17 +30,17 @@
 		\includegraphics[width=\textwidth]{figures/scenarios/demand099-carbon70-datetime.png}
 		\caption[Network2]%
 		{\small \textsterling70 carbon tax.}
-		\label{fig:demand99carbon10}
+		\label{fig:demand99carbon70}
 	\end{subfigure}
-	\vskip\baselineskip
+	\caption{Scenarios from 2020 to 2050 with varying carbon tax.}
 \end{figure*}
 
 
-The agent-based model is made up of five significant parts: the agents which are made up of the generation companies (GenCos) and demand agents; power plants and a market operator which controls the spot market. How these parts interact are displayed in figure \ref{fig:systemoverview}. The relevant data sources are also provided here.
+The agent-based model is made up of five significant parts: the agents which are made up of the generation companies (GenCos) and demand agents; power plants and a market operator which controls the spot market. How these parts interact are displayed in Figure \ref{fig:systemoverview}. The relevant data sources are also provided here.
 
-We initialise the United Kingdom with every single power plant in operation in the year 2018, which are owned by their respective generation companies . Individual historical power plant costs are estimated from levelized cost of electricity (LCOE) \cite{Dale2013, IEA2015,IRENA2018}, whereas future and present power plant costs are taken from the department of business and industrial strategy \cite{Department2016}. The variable operation and maintenance cost was defined stochastically to model the changing costs per project. A uniform distribution was chosen to provide sufficient variance between projects.
+We initialise the United Kingdom with our model with exemplar data from the UK. We model every single power plant in operation in the year 2018, which are owned by their respective generation companies. Individual historical power plant costs are estimated from levelized cost of electricity (LCOE) \cite{Dale2013, IEA2015,IRENA2018}, whereas future and present power plant costs are taken from the department of business and industrial strategy \cite{Department2016}. The variable operation and maintenance cost was defined stochastically to model the changing costs per project. A uniform distribution was chosen to provide sufficient variance between projects.
 
-The demand agent is modelled as a single aggregated demand, split up into 20 segments of a load duration curve (LDC), enabling us to increase speed of computation whilst maintaining accuracy. An LDC is defined as the load within a year, sorted in order of magnitude. 
+The demand agent is modelled as a single aggregated demand, split up into 20 segments of a load duration curve (LDC), enabling us to increase speed of computation whilst maintaining accuracy. An LDC is defined as a yearly load sorted in order of magnitude. 
 
 We model the influence of outages using availability data for gas, coal, photovoltaic, offshore and onshore power generators \cite{Ltd2016, Hunt2015, carroll-j}. Historical availabilities are modelled for older gas, coal and hydro power plants \cite{AlbertaSystemElectricOperator2016}. Capacity factors were taken as an average of the UK for solar and wind \cite{Pfenninger2016, Staffell2016}. Where capacity factors is defined as the ratio of electrical output over a given time period over the maximum possible electrical energy output. 
 
