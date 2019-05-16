@@ -1,0 +1,5 @@
+For access to ElecSim codebase please refer to the following GitHub repository:
+https://github.com/alexanderkell/elecsim
+
+For codebase used to develop this paper please refer to the following GitHub repository:
+https://github.com/alexanderkell/elecsim/tree/e0e36f959831d757850dd5de1de360a1522316f2
